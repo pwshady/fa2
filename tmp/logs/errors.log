@@ -1,0 +1,4 @@
+[2022-10-28 22:56:48] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12
+[2022-10-29 22:11:58] Code: 0 | Message: count(): Argument #1 ($value) must be of type Countable|array, string given | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 33
+[2022-10-29 22:19:49] Code: 2 | Message: Undefined array key 1 | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 35
+[2022-10-29 22:37:53] Code: 2 | Message: Undefined variable $self | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 26

@@ -6,10 +6,7 @@ if (PHP_MAJOR_VERSION < 8) {
 }
 
 require_once dirname(__DIR__) . '/config/init.php';
-
+require_once FUNC . '/debug.php';
 new \fa2\App();
 
-\fa2\App::$app->setLanguage('ru');
-$s = \fa2\App::$app->getLanguage();
-
-echo $s;
+//throw new Exception('Error');

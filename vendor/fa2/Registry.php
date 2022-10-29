@@ -12,6 +12,7 @@ class Registry
     protected static array $userRoles = [];
     
     protected static array $properties = [];
+    
 
     public function setLanguage($language)
     {
