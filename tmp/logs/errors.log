@@ -2,3 +2,34 @@
 [2022-10-29 22:11:58] Code: 0 | Message: count(): Argument #1 ($value) must be of type Countable|array, string given | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 33
 [2022-10-29 22:19:49] Code: 2 | Message: Undefined array key 1 | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 35
 [2022-10-29 22:37:53] Code: 2 | Message: Undefined variable $self | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 26
+[2022-10-30 01:11:54] Code: 0 | Message: Undefined constant "fa2\EOL" | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 52
+[2022-10-30 01:22:23] Code: 0 | Message: count(): Argument #1 ($value) must be of type Countable|array, bool given | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 54
+[2022-10-30 01:49:33] Code: 0 | Message: Call to undefined function fa2\accessCheck() | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 55
+[2022-10-30 01:50:05] Code: 0 | Message: Call to undefined function fa2\accessCheck() | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 55
+[2022-10-30 02:02:27] Code: 0 | Message: Call to undefined function fa2\emptu() | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 56
+[2022-10-30 02:36:50] Code: 0 | Message: Cannot assign string to property fa2\Router::$params of type array | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 86
+[2022-10-30 02:26:37] Code: 0 | Message: Class "fa2\Exception" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 25
+[2022-10-30 02:27:39] Code: 0 | Message: Class "fa2\Exception" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 25
+[2022-10-30 02:29:45] Code: 0 | Message: Class "fa2\Exception" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 25
+[2022-10-30 02:30:00] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12
+[2022-10-30 02:30:47] Code: 0 | Message: Class "fa2\Exception" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 25
+[2022-10-30 02:32:31] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12
+[2022-10-30 02:32:49] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12
+[2022-10-30 02:34:37] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12
+[2022-10-30 02:34:42] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12
+[2022-10-30 02:36:05] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12
+[2022-10-30 04:16:53] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 27
+[2022-10-30 04:17:16] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 27
+[2022-10-30 04:18:41] Code: 0 | Message: syntax error, unexpected token "if" | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 23
+[2022-10-30 04:19:04] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 28
+[2022-10-30 04:23:11] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 28
+[2022-10-30 04:25:47] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 27
+[2022-10-30 04:26:34] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 27
+[2022-10-30 04:27:51] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 27
+[2022-10-30 04:28:26] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 27
+[2022-10-30 04:29:21] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 28
+[2022-10-30 04:29:43] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 28
+[2022-10-30 04:31:21] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 28
+[2022-10-30 04:32:47] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12
+[2022-10-30 04:34:03] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 28
+[2022-10-30 05:16:38] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12

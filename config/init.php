@@ -10,6 +10,7 @@ define("FUNC", CORE . '/func');
 
 #App constants
 define("APP", ROOT . '/app');
+define("PAGE", APP . '/pages');
 
 #Config constants
 define("CONFIG", ROOT . '/config');
