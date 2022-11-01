@@ -33,3 +33,38 @@
 [2022-10-30 04:32:47] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12
 [2022-10-30 04:34:03] Code: 0 | Message: Error controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 28
 [2022-10-30 05:16:38] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 12
+[2022-11-01 02:29:32] Code: 2 | Message: Undefined variable $arr | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 80
+[2022-11-01 03:40:45] Code: 0 | Message: Class "app\pages\dev\test\_\_\SinglePageController" not found | File: /opt/lampp/htdocs/fa2/app/pages/dev/test/_/_/Controller.php | Line: 7
+[2022-11-01 06:17:23] Code: 0 | Message: Access to undeclared static property fa2\SinglePageController::$page | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 12
+[2022-11-01 06:18:02] Code: 0 | Message: Access to undeclared static property fa2\SinglePageController::$page | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 12
+[2022-11-01 06:19:13] Code: 0 | Message: Access to undeclared static property fa2\SinglePageController::$page | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 12
+[2022-11-01 06:27:50] Code: 2 | Message: Undefined variable $page | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 12
+[2022-11-01 06:28:28] Code: 0 | Message: Too few arguments to function fa2\SinglePageController::__construct(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/Router.php on line 24 and exactly 2 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 8
+[2022-11-01 06:33:32] Code: 0 | Message: Class "app\pages\dev\test\__\MultiPageController" not found | File: /opt/lampp/htdocs/fa2/app/pages/dev/test/__/__Controller.php | Line: 7
+[2022-11-01 06:34:14] Code: 0 | Message: Class "fa2\MultiPageController" not found | File: /opt/lampp/htdocs/fa2/app/pages/dev/test/__/__Controller.php | Line: 7
+[2022-11-01 06:35:19] Code: 2 | Message: Undefined variable $request | File: /opt/lampp/htdocs/fa2/vendor/fa2/MultiPageController.php | Line: 14
+[2022-11-01 06:52:53] Code: 0 | Message: Cannot assign string to property fa2\Router::$params of type array | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 52
+[2022-11-01 08:11:54] Code: 0 | Message: syntax error, unexpected token "}" | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 16
+[2022-11-01 08:12:13] Code: 0 | Message: Access to undeclared static property fa2\SinglePageController::$request | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 15
+[2022-11-01 08:16:40] Code: 0 | Message: Access to undeclared static property fa2\SinglePageController::$request | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 15
+[2022-11-01 08:20:01] Code: 0 | Message: Access to undeclared static property fa2\SinglePageController::$request | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 15
+[2022-11-01 08:22:21] Code: 2 | Message: Undefined variable $request | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 24
+[2022-11-01 15:33:59] Code: 0 | Message: Call to undefined method app\pages\dev\test\_\_help\Controller::getModel() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 17
+[2022-11-01 15:36:06] Code: 0 | Message: Call to undefined method app\pages\dev\test\_\_help\Controller::getModel() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 17
+[2022-11-01 15:41:19] Code: 0 | Message: Call to undefined function fa2\run() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 18
+[2022-11-01 15:43:20] Code: 0 | Message: Call to undefined function fa2\run() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 18
+[2022-11-01 15:44:09] Code: 0 | Message: Call to undefined function fa2\run() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 23
+[2022-11-01 15:44:57] Code: 0 | Message: Call to undefined function fa2\run() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 18
+[2022-11-01 15:57:29] Code: 64 | Message: Declaration of fa2\PageController::getDir($dir) must be compatible with fa2\Controller::getDir() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 27
+[2022-11-01 15:58:47] Code: 64 | Message: Declaration of fa2\PageController::getDir($dir) must be compatible with fa2\Controller::getDir() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 27
+[2022-11-01 16:00:03] Code: 64 | Message: Declaration of fa2\PageController::getDir($dir) must be compatible with fa2\Controller::getDir() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 27
+[2022-11-01 16:51:20] Code: 0 | Message: Access to undeclared static property fa2\Controller::$settings | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 23
+[2022-11-01 16:51:58] Code: 2 | Message: Undefined variable $settings | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 23
+[2022-11-01 16:54:16] Code: 2 | Message: Undefined variable $settings | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 23
+[2022-11-01 16:54:19] Code: 2 | Message: Undefined variable $settings | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 23
+[2022-11-01 16:57:00] Code: 2 | Message: Array to string conversion | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 25
+[2022-11-01 16:57:39] Code: 2 | Message: Array to string conversion | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 25
+[2022-11-01 19:15:34] Code: 0 | Message: file_put_contents(): Argument #1 ($filename) must be of type string, array given | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 30
+[2022-11-01 19:21:38] Code: 0 | Message: Cannot assign stdClass to property fa2\Controller::$settings of type array | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 16
+[2022-11-01 20:28:41] Code: 0 | Message: Call to undefined method fa2\Registry::getProperties() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 27
+[2022-11-01 21:12:23] Code: 0 | Message: Call to undefined method app\pages\dev\test\_\_help\Controller::getLabels() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 25

@@ -44,7 +44,7 @@ class Registry
         return self::$properties[$key] ?? null;
     }
 
-    public function getPropertys(): array
+    public function getProperties(): array
     {
         return self::$properties;
     }
