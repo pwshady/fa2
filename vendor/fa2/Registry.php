@@ -39,6 +39,15 @@ class Registry
         self::$properties[$key] = $value;
     }
 
+    public function addProperty($key, $value)
+    {
+        if (array_key_exists($key, self::$properties)) {
+            self::$properties[$key] = array_merge(self::$properties[$key], $value);
+        } else {
+            self::$properties[$key] = $value;
+        }
+    }
+
     public function getProperty($key)
     {
         return self::$properties[$key] ?? null;

@@ -1,8 +1,3 @@
 {
-    "v_basicauthorization": {
-        "title": "title text",
-        "kw": "kw text"
-    },
-    "test": "test text",
-    "id": 25
+    "v_basicauthorization": {}
 }

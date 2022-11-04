@@ -9,30 +9,27 @@ abstract class Controller
 
     protected function run(){}
 
-    protected function getDir(){}
+    protected function createView(){}
 
-    protected function getSettings($dir, $prefix = '')
+    protected function getLabels($dir, $prefix = '')
     {
-        $settings = [];
-        if (file_exists(CONFIG . '/settings.json'))
-        {
-            echo '<h1>uuuu</h1>';
-            //$settings = json_decode(file_get_contents($filePath), true);
-        }
-        $filePath = $dir . '/settings.json';
+        $labels = [];
+        $filePath = $dir . '/language/' . App::$app->getLanguage() . '.json';
         if (file_exists($filePath)){
-            $settings = json_decode(file_get_contents($filePath), true);
-            App::$app->setProperty('settings', $settings);
+            $labels = json_decode(file_get_contents($filePath), true);
+        } else {
+            $baseLanguage = isset(App::$app->getProperty('settings')['baseLanguage']) ? App::$app->getProperty('settings')['baseLanguage'] : 'en';
+            $filePath = $dir . '/language/' . $baseLanguage . '.json';
+            if (file_exists($filePath)){
+                $labels = json_decode(file_get_contents($filePath), true);
+            }
         }
+        App::$app->addProperty('labels', $labels);
     }
 
-    protected function getVidgets($dir, $prefix = '')
+    protected function creatModel()
     {
-        $filePath = $dir . '/vidgets.json';
-        if (file_exists($filePath)){
-            $vidgets = json_decode(file_get_contents($filePath), true);
-            App::$app->setProperty('vidgets', $vidgets);
-        }
+        echo '<h1>ModelComplite</h1>';
     }
 
 }

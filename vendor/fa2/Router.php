@@ -29,8 +29,8 @@ class Router
                 $controller = 'app\pages' . self::$page . '__\__Controller';
                 $controller = str_replace('/', '\\', $controller);
                 if (class_exists($controller)) {
-                    $controllerObj = new $controller(self::$page, self::$request, self::$params);
                     echo '<br>ok cont multi';
+                    $controllerObj = new $controller(self::$page, self::$request, self::$params);
                     die;
                 }
             }
@@ -70,7 +70,7 @@ class Router
 
     protected static function getPage($page, $request)
     {
-        if (file_exists(PAGE . $page . 'access.json')) {
+        if (is_file(PAGE . $page . 'access.json')) {
             $access = self::accessCheck();
             if ($access != '') {
                 echo $access;

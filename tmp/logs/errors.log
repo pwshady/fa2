@@ -68,3 +68,16 @@
 [2022-11-01 19:21:38] Code: 0 | Message: Cannot assign stdClass to property fa2\Controller::$settings of type array | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 16
 [2022-11-01 20:28:41] Code: 0 | Message: Call to undefined method fa2\Registry::getProperties() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 27
 [2022-11-01 21:12:23] Code: 0 | Message: Call to undefined method app\pages\dev\test\_\_help\Controller::getLabels() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 25
+[2022-11-01 23:54:12] Code: 0 | Message: Call to undefined method app\pages\dev\test\_\_help\Controller::getLabels() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 26
+[2022-11-01 23:55:29] Code: 0 | Message: Too few arguments to function fa2\Controller::getLabels(), 1 passed in /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php on line 26 and exactly 2 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 14
+[2022-11-02 05:59:22] Code: 2 | Message: Undefined variable $filePathfile | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 17
+[2022-11-02 06:43:27] Code: 0 | Message: syntax error, unexpected variable "$filePath" | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 17
+[2022-11-02 06:47:35] Code: 2 | Message: Undefined array key "labels" | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 44
+[2022-11-02 07:04:10] Code: 0 | Message: Call to undefined method app\pages\dev\test\_\_help\Controller::creatModel() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 26
+[2022-11-02 07:50:52] Code: 0 | Message: Too few arguments to function fa2\View::render(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/View.php on line 12 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/View.php | Line: 15
+[2022-11-02 08:08:12] Code: 0 | Message: Too few arguments to function fa2\PageController::creatView(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php on line 30 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 61
+[2022-11-02 08:13:34] Code: 0 | Message: Too few arguments to function fa2\View::render(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/View.php on line 12 and at least 1 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/View.php | Line: 15
+[2022-11-02 14:00:01] Code: 2 | Message: Array to string conversion | File: /opt/lampp/htdocs/fa2/vendor/fa2/View.php | Line: 18
+[2022-11-04 03:21:28] Code: 0 | Message: array_merge(): Argument #2 must be of type array, null given | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 41
+[2022-11-04 03:22:50] Code: 0 | Message: array_merge(): Argument #2 must be of type array, null given | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 41
+[2022-11-04 03:37:38] Code: 0 | Message: array_merge(): Argument #2 must be of type array, null given | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 42

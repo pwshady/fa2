@@ -2,7 +2,9 @@
 
 namespace app\pages\dev\_\_;
 
-class Controller
+use fa2\SinglePageController;
+
+class Controller extends SinglePageController
 {
 
 }
