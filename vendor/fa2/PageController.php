@@ -5,31 +5,28 @@ namespace fa2;
 class PageController extends Controller
 {
 
-    public function __construct($page, $request, $params)
+    public function __construct($page, $request)
     {
-        echo '<h1>PageController Job</h1>';
-        echo 'page: ';
-        debug($page);
-        echo 'request: ';
-        debug($request);
-        echo 'params: ';
-        debug($params);
         $this->run();
     }
 
-    protected function run($dir = '')
+    protected function run($page = [], $request = '')
     {
-        echo $dir;
-        $this->getSettings($dir);
-        $this->getLabels($dir);
-        $this->getVidgets($dir);
-        $this->creatModel();
-        $this->creatVidgets();
-        debug($dir);
+        echo '<br>=================Controller';
+        $this->getModel($page, $request); 
+        //$this->getSettings($dir);
+        //$this->getLabels($dir);
+        //$this->getVidgets($dir);
+        //$this->creatModel();
+        //$this->creatVidgets();
+        //debug($dir);
         //debug(App::$app->getProperties());
-        $this->creatView($dir . '/testView.php');
+        //$this->creatView($dir . '/indexView.php');
     }
 
+
+
+    //
     protected function getSettings($dir)
     {
         $settings = [];
@@ -63,5 +60,7 @@ class PageController extends Controller
         $html = (new View())->render($view);
         echo $html;
     }
+
+
 
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\pages\dev\test\__;
+namespace app\pages\test\__;
 
 use fa2\MultiPageController;
 

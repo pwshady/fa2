@@ -81,3 +81,24 @@
 [2022-11-04 03:21:28] Code: 0 | Message: array_merge(): Argument #2 must be of type array, null given | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 41
 [2022-11-04 03:22:50] Code: 0 | Message: array_merge(): Argument #2 must be of type array, null given | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 41
 [2022-11-04 03:37:38] Code: 0 | Message: array_merge(): Argument #2 must be of type array, null given | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 42
+[2022-11-07 17:49:26] Code: 0 | Message: Class "app\pages\_\SinglePageController" not found | File: /opt/lampp/htdocs/fa2/app/pages/_/_Controller.php | Line: 5
+[2022-11-07 18:15:44] Code: 64 | Message: Declaration of fa2\SinglePageController::getDir($page) must be compatible with fa2\PageController::getDir() | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 14
+[2022-11-07 18:16:59] Code: 64 | Message: Declaration of fa2\SinglePageController::getDir($page) must be compatible with fa2\PageController::getDir() | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 14
+[2022-11-07 18:17:32] Code: 64 | Message: Declaration of fa2\SinglePageController::getDir($page) must be compatible with fa2\PageController::getDir() | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 14
+[2022-11-07 18:17:34] Code: 64 | Message: Declaration of fa2\SinglePageController::getDir($page) must be compatible with fa2\PageController::getDir() | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 14
+[2022-11-07 18:18:30] Code: 2 | Message: Undefined variable $request | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 16
+[2022-11-07 18:19:33] Code: 64 | Message: Declaration of fa2\SinglePageController::getDir($page) must be compatible with fa2\PageController::getDir($page, $request) | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 14
+[2022-11-07 18:53:07] Code: 2 | Message: Undefined variable $request | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 18
+[2022-11-08 00:43:42] Code: 0 | Message: syntax error, unexpected token "}" | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 19
+[2022-11-10 02:55:20] Code: 0 | Message: Access to undeclared static property fa2\Router::$params | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 52
+[2022-11-13 12:44:59] Code: 2 | Message: Undefined variable $model_path | File: /opt/lampp/htdocs/fa2/vendor/fa2/MultiPageController.php | Line: 21
+[2022-11-13 12:45:35] Code: 0 | Message: syntax error, unexpected string content ";", expecting "," or ";" | File: /opt/lampp/htdocs/fa2/vendor/fa2/MultiPageController.php | Line: 21
+[2022-11-13 12:48:37] Code: 64 | Message: Cannot declare class app\pages\test\__\__Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/test/__/__Model.php | Line: 7
+[2022-11-13 13:07:26] Code: 64 | Message: Declaration of fa2\SinglePageController::getModel($dir) must be compatible with fa2\Controller::getModel() | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 15
+[2022-11-13 13:16:28] Code: 0 | Message: explode(): Argument #2 ($string) must be of type string, array given | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 17
+[2022-11-13 13:18:13] Code: 8192 | Message: Optional parameter $page declared before required parameter $request is implicitly treated as a required parameter | File: /opt/lampp/htdocs/fa2/vendor/fa2/Controller.php | Line: 12
+[2022-11-13 13:18:37] Code: 64 | Message: Declaration of fa2\SinglePageController::getModel($page, $request) must be compatible with fa2\Controller::getModel($page = [], $request = '') | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 15
+[2022-11-13 13:20:22] Code: 64 | Message: Declaration of fa2\SinglePageController::getModel($page, $request) must be compatible with fa2\Controller::getModel($page = [], $request = '') | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 15
+[2022-11-13 13:20:25] Code: 64 | Message: Declaration of fa2\SinglePageController::getModel($page, $request) must be compatible with fa2\Controller::getModel($page = [], $request = '') | File: /opt/lampp/htdocs/fa2/vendor/fa2/SinglePageController.php | Line: 15
+[2022-11-13 13:24:45] Code: 0 | Message: Too few arguments to function fa2\MultiPageModel::__construct(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/MultiPageController.php on line 23 and exactly 2 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/MultiPageModel.php | Line: 8
+[2022-11-13 13:27:06] Code: 0 | Message: Call to undefined method app\pages\test\help\_test2\_Controller::getAllData() | File: /opt/lampp/htdocs/fa2/vendor/fa2/PageController.php | Line: 20
