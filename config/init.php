@@ -25,3 +25,5 @@ define("CACHE", TMP . '/cache');
 define("LOGS", TMP . '/logs');
 
 require_once ROOT . '/vendor/autoload.php';
+
+//tt
