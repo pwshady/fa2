@@ -25,3 +25,4 @@ Stack trace:
 [2022-11-17 07:59:52] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
 [2022-11-17 08:00:19] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 14
 [2022-11-17 08:07:21] Code: 2 | Message: Undefined variable $test | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 15
+[2022-12-02 01:11:35] Code: 0 | Message: Call to undefined method fa2\Router::run() | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 20

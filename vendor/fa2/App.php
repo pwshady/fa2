@@ -12,7 +12,7 @@ class App
         $query = trim(urldecode($_SERVER['QUERY_STRING']), '/');
         new ErrorHandler();
         self::$app = Registry::getInstance();
-        //Router::dispatch($query);
+        Router::dispatch($query);
         //$this->getParams();
         //debug(self::$app->getProperties());
     }
