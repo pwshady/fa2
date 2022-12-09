@@ -26,3 +26,48 @@ Stack trace:
 [2022-11-17 08:00:19] Code: 0 | Message: Error | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 14
 [2022-11-17 08:07:21] Code: 2 | Message: Undefined variable $test | File: /opt/lampp/htdocs/fa2/public/index.php | Line: 15
 [2022-12-02 01:11:35] Code: 0 | Message: Call to undefined method fa2\Router::run() | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 20
+[2022-12-08 11:42:50] Code: 0 | Message: Class "fa2\controller" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 47
+[2022-12-08 11:43:35] Code: 0 | Message: Class "fa2\basic\controllers\controller" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 47
+[2022-12-08 11:44:24] Code: 0 | Message: Class "fa2\basic\controllers\controller" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 47
+[2022-12-08 11:47:39] Code: 0 | Message: Class "fa2\controller" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 49
+[2022-12-08 11:50:39] Code: 0 | Message: Class "fa2\controller" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 49
+[2022-12-08 11:51:12] Code: 0 | Message: Class "fa2\fa2\basic\controllers\controller" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 49
+[2022-12-08 11:51:30] Code: 0 | Message: Class "fa2\basic\controllers\controller" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 49
+[2022-12-08 11:54:25] Code: 0 | Message: Class "fa2\Controller" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 50
+[2022-12-08 13:19:23] Code: 0 | Message: Call to undefined function fa2\basic\controllers\getModel() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/Controller.php | Line: 16
+[2022-12-09 00:58:36] Code: 2 | Message: Undefined variable $controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 26
+[2022-12-09 00:59:13] Code: 0 | Message: Class "basic\controllers\PageController" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 26
+[2022-12-09 01:07:48] Code: 0 | Message: syntax error, unexpected token "if", expecting "," or ";" | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 20
+[2022-12-09 02:08:23] Code: 2 | Message: Undefined property: fa2\basic\controllers\PageController::$controllr | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 20
+[2022-12-09 02:09:38] Code: 0 | Message: Class "app\pages\PageController" not found | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 5
+[2022-12-09 02:10:26] Code: 0 | Message: Class "app\pages\fa2\basic\controllers\PageController" not found | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 5
+[2022-12-09 02:42:55] Code: 1 | Message: Allowed memory size of 536870912 bytes exhausted (tried to allocate 50348032 bytes) | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 20
+[2022-12-09 02:42:55] Code: 8 | Message: ob_end_clean(): Failed to delete buffer. No buffer to delete | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 50
+[2022-12-09 03:04:04] Code: 1 | Message: Allowed memory size of 536870912 bytes exhausted (tried to allocate 58736640 bytes) | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 20
+[2022-12-09 03:04:04] Code: 8 | Message: ob_end_clean(): Failed to delete buffer. No buffer to delete | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 50
+[2022-12-09 03:10:44] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:13:05] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:14:44] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:17:14] Code: 64 | Message: Declaration of app\pages\Controller::run() must be compatible with fa2\basic\controllers\Controller::run($dir) | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 10
+[2022-12-09 03:17:57] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:21:57] Code: 0 | Message: Class "app\pages\PageController" not found | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:23:31] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:29:44] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:34:56] Code: 0 | Message: Class "fa2\basic\controllers\Controller" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 5
+[2022-12-09 03:35:38] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:36:48] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:40:37] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:43:10] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 03:46:28] Code: 64 | Message: Cannot declare class app\pages\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/Controller.php | Line: 7
+[2022-12-09 04:59:19] Code: 64 | Message: Cannot declare class app\pages\mypagecontroller\MyPageController, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/test/v1/MyPageController.php | Line: 7
+[2022-12-09 05:00:28] Code: 64 | Message: Cannot declare class app\pages\test\v1\mypagecontroller\MyPageController, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/test/v1/MyPageController.php | Line: 7
+[2022-12-09 05:01:31] Code: 64 | Message: Cannot declare class app\pages\test\v1\mypagecontroller\r\MyPageController, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/test/v1/MyPageController.php | Line: 7
+[2022-12-09 05:02:16] Code: 64 | Message: Cannot declare class MyPageController, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/test/v1/MyPageController.php | Line: 7
+[2022-12-09 05:03:33] Code: 64 | Message: Cannot declare class app\pages\test\v1\MyPageController, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/test/v1/MyPageController.php | Line: 7
+[2022-12-09 05:08:35] Code: 64 | Message: Cannot declare class app\pages\test\v1\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/test/v1/Controller.php | Line: 7
+[2022-12-09 05:11:10] Code: 64 | Message: Cannot declare class app\pages\test\v1\MyPageController, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/test/v1/MyPageController.php | Line: 7
+[2022-12-09 11:36:58] Code: 64 | Message: Declaration of app\pages\test\v1\MyPageController::run($dir) must be compatible with fa2\basic\controllers\Controller::run() | File: /opt/lampp/htdocs/fa2/app/pages/test/v1/MyPageController.php | Line: 15
+[2022-12-09 11:49:58] Code: 0 | Message: Call to undefined method fa2\basic\controllers\PageController::puc() | File: /opt/lampp/htdocs/fa2/vendor/fa2/Router.php | Line: 50
+[2022-12-09 11:50:46] Code: 2 | Message: Undefined variable $dir | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 18
+[2022-12-09 11:52:37] Code: 2 | Message: Undefined property: fa2\basic\controllers\PageController::$dir | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 17
+[2022-12-09 12:01:57] Code: 2 | Message: Undefined variable $dir | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 28
