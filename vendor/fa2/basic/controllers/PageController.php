@@ -5,7 +5,7 @@ namespace fa2\basic\controllers;
 class PageController extends Controller
 {
 
-    public string $controller = 'fa2\basic\controllers\PageController';
+    public string $controller_path = 'fa2\basic\controllers\PageController';
 
     public function __construct(public $dir, public $page)
     {
@@ -34,14 +34,20 @@ class PageController extends Controller
                 if (is_dir(ROOT . $this->dir . $this->page[0])) {
                     $this->dir .= $this->page[0];
                     array_shift($this->page);
-                    $controller = new $this->controller($this->dir, $this->page);
+                    $controller = new $this->controller_path($this->dir, $this->page);
                     $controller->run();
                 } else {
                     
                 }
             } else {
                 if (is_dir(ROOT . $this->dir . '_')){
-                    echo '<br>=====gs';
+                    $controller_path = str_replace('/', '\\', $this->dir) . 'MySinglePageController';
+                    if (class_exists($controller_path) && ($controller_path != '\\' . __CLASS__)) {
+                        $controller = new $controller_path($this->dir, $this->page);
+                        $controller->run();
+                    } else {
+
+                    }
                 }
             }
         }

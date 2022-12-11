@@ -71,3 +71,4 @@ Stack trace:
 [2022-12-09 11:50:46] Code: 2 | Message: Undefined variable $dir | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 18
 [2022-12-09 11:52:37] Code: 2 | Message: Undefined property: fa2\basic\controllers\PageController::$dir | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 17
 [2022-12-09 12:01:57] Code: 2 | Message: Undefined variable $dir | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 28
+[2022-12-11 21:55:42] Code: 2 | Message: Undefined property: fa2\basic\controllers\PageController::$controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 37
