@@ -72,3 +72,10 @@ Stack trace:
 [2022-12-09 11:52:37] Code: 2 | Message: Undefined property: fa2\basic\controllers\PageController::$dir | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 17
 [2022-12-09 12:01:57] Code: 2 | Message: Undefined variable $dir | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 28
 [2022-12-11 21:55:42] Code: 2 | Message: Undefined property: fa2\basic\controllers\PageController::$controller | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 37
+[2022-12-15 04:01:18] Code: 0 | Message: Class "app\pages\test\v7\__\MultiPageController" not found | File: /opt/lampp/htdocs/fa2/app/pages/test/v5/__/MyMultiPageController.php | Line: 7
+[2022-12-15 04:02:31] Code: 0 | Message: Class "app\pages\test\v5\__\MultiPageController" not found | File: /opt/lampp/htdocs/fa2/app/pages/test/v5/__/MyMultiPageController.php | Line: 7
+[2022-12-15 04:44:02] Code: 0 | Message: Call to undefined method fa2\basic\controllers\MultiPageController::run() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 63
+[2022-12-15 04:45:50] Code: 0 | Message: Call to undefined method app\pages\test\v5\__\MyMultiPageController::run() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 58
+[2022-12-15 04:51:02] Code: 64 | Message: Cannot declare class app\pages\test\v1\MyPageController, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/test/v1/MyPageController.php | Line: 7
+[2022-12-15 04:58:33] Code: 64 | Message: Cannot declare class app\pages\test\v1\MyPageController, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/pages/test/v1/MyPageController.php | Line: 7
+[2022-12-15 06:23:14] Code: 0 | Message: Class "app\pages\test\v6\t\_\SinglePageController" not found | File: /opt/lampp/htdocs/fa2/app/pages/test/v6/t/_/MySinglePageController.php | Line: 5

@@ -7,7 +7,9 @@ class SinglePageController extends PageController
 
     public function run()
     {
-        echo '<h1>MyPageControllerV7</h1>';
+        echo '<h1>SingleController</h1>';
+        echo '<h2>' . $this->dir . '</h2>';
+        self::job();
     }
 
 }
