@@ -8,7 +8,10 @@ class Registry
 
     use traits\TSingleton;
 
-    protected static string $language = 'en';
+    protected static array $language = [
+        "code" => "en",
+        "name" => "England"
+    ];
     protected static array $userRoles = [];
     
     protected static array $properties = [];
@@ -19,7 +22,7 @@ class Registry
         self::$language = $language;
     }
 
-    public function getLanguage(): string
+    public function getLanguage(): array
     {
         return self::$language;
     }

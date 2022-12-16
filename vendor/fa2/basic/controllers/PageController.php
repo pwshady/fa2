@@ -2,6 +2,8 @@
 
 namespace fa2\basic\controllers;
 
+use fa2\App;
+
 class PageController extends Controller
 {
 
@@ -29,7 +31,7 @@ class PageController extends Controller
             $controller->run();
         } else {
             if ($this->page) {
-                self::getModel();
+                self::job();
                 if (is_dir(ROOT . $this->dir . $this->page[0])) {
                     $this->dir .= $this->page[0];
                     array_shift($this->page);
@@ -70,15 +72,32 @@ class PageController extends Controller
                 }       
             }  
         }
-        self::render();
     }
 
     public function job()
     {
-        self::getModel();
+        self::runModel();
     }
 
-    public function render(){}
+    public function runModel()
+    {
+        $model_path = str_replace('/', '\\', $this->dir) . 'MyPageModel';
+        if (class_exists($model_path)) {
+            $model = new $model_path($this->dir);
+            $model->run();
+        } else {
+            $model_path = 'fa2\basic\models\PageModel';
+            $model = new $model_path($this->dir);
+            $model->run();
+        }
+
+    }
+
+    public function render()
+    {
+        echo '<h1>Render</h1>';
+        debug(App::$app->getLanguage());
+    }
 
 
 

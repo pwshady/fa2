@@ -15,10 +15,15 @@ class Controller
         echo '<br>run';
     }
 
-    public function getModel()
+    public function runModel()
     {
         echo '<br>Model of dir ' . $this->dir;
         echo '<br>';
+    }
+
+    public function render()
+    {
+        echo '<br>View of dir ' . $this->dir;
     }
 
 }

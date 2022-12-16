@@ -10,6 +10,7 @@ class MultiPageController extends PageController
         echo '<h1>BasicMultiController</h1>';
         echo '<h2>' . $this->dir . '</h2>';
         self::job();
+        self::render();
     }
 
 }

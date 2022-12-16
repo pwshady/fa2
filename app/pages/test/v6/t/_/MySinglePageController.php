@@ -9,7 +9,7 @@ class MySinglePageController extends SinglePageController
 
     public function run()
     {
-        echo '<h1>SingleController</h1>';
+        echo '<h1>MySingleController</h1>';
         echo '<h2>' . $this->dir . '</h2>';
     }
 

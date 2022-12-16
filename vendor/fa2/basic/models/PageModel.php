@@ -2,12 +2,17 @@
 
 namespace fa2\basic\models;
 
-class PageModel
+class PageModel extends Model
 {
-    public function __construct($dir)
+    public function __construct(public $dir)
     {
-        echo '<br>=====dir: ' . $dir;
+
     }
 
-    public function getData(){}
+    public function run()
+    {
+        echo '<br>=RunModel: ' . $this->dir;
+        self::getAccess();
+    }
+
 }

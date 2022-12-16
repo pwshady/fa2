@@ -8,18 +8,14 @@ class Router
 {
 
     protected static array $page = [];
-    protected static string $request = '';
 
-    public static function dispatch($url, $lang = false)
+    public static function dispatch($url)
     {
         $url = self::removeQueryString($url);
         self::getPage($url);
-        if ($lang){
-            self::getLanguage($url);
-        } else {
-            self::$request = $url;
+        if (file_exists(ROOT . '/app/pages/language.json')){
+            self::getLanguage();
         }
-        debug(self::$page);
         self::run();
     }
 
@@ -34,9 +30,19 @@ class Router
         return '';
     }
 
-    protected static function getLanguage($url)
+    protected static function getLanguage()
     {
-
+        $language = json_decode(file_get_contents(ROOT . '/app/pages/language.json'), true);
+        if (array_key_exists('base_language', $language)) {
+            self::setLanguage($language['base_language']);
+        }
+        if (array_key_exists('type', $language)) {
+            switch ($language['type']) {
+                case 'prefix':
+                    self::getPrefixLanguage($language);
+                    break;
+            }
+        }
     }
 
     protected static function getPage($url)
@@ -46,7 +52,41 @@ class Router
 
     protected static function run()
     {
-        $cont = new basic\controllers\PageController('/app/pages', self::$page);
-        $cont->run();
+        $controller = new basic\controllers\PageController('/app/pages', self::$page);
+        $controller->run();
+    }
+
+    protected static function getPrefixLanguage($language)
+    {
+        if (array_key_exists('regex', $language)) {
+            $regex = $language['regex'];
+            if (array_key_exists('language', $language)) {
+                $langs = $language['language'];
+                preg_match($regex, self::$page[0], $prefix);
+                if ($prefix) {
+                    if (is_array($langs)) {
+                        foreach ($langs as $key => $value) {
+                            if ($prefix[0] === $key) {
+                                self::setLanguage($value);
+                                array_shift(self::$page);
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    protected static function setLanguage($lang)
+    {
+        if (self::validateLanguage($lang)) {
+            App::$app->setLanguage($lang);
+        }
+    }
+
+    protected static function validateLanguage($lang)
+    {
+        return true;
     }
 }

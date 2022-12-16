@@ -1,0 +1,22 @@
+{
+    "type": "prefix",
+    "regex": "/^..$/",
+    "base_language": {
+        "code": "ru",
+        "name": "Русский"
+    },
+    "language": {
+        "en": {
+            "code": "en",
+            "name": "England"
+        },
+        "ru": {
+            "code": "ru",
+            "name": "Русский"
+        },
+        "fr": {
+            "code": "en",
+            "name": "England"
+        }
+    }
+}
