@@ -96,7 +96,13 @@ class PageController extends Controller
     public function render()
     {
         echo '<h1>Render</h1>';
+        echo '<h2>Language</h2>';
         debug(App::$app->getLanguage());
+        echo '<h2>UserRoles</h2>';
+        debug(App::$app->getAccess());
+        echo '<h2>Errors</h2>';
+        debug(App::$app->getErrors());
+        
     }
 
 

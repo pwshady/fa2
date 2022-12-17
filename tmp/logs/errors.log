@@ -99,3 +99,17 @@ Stack trace:
 [2022-12-16 06:39:27] Code: 0 | Message: Class "fa2\basic\controllers\App" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 97
 [2022-12-16 06:40:25] Code: 0 | Message: Class "fa\App" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 99
 [2022-12-16 06:44:19] Code: 0 | Message: fa2\Registry::getLanguage(): Return value must be of type string, array returned | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 27
+[2022-12-16 12:55:34] Code: 0 | Message: Class "fa2\basic\controllers\Exception" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 100
+[2022-12-16 12:56:42] Code: 0 | Message: Class "fa2\basic\controllers\Exception" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 100
+[2022-12-16 12:58:43] Code: 0 | Message: Class "fa2\basic\controllers\Exception" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 101
+[2022-12-16 12:58:46] Code: 0 | Message: Class "fa2\basic\controllers\Exception" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 101
+[2022-12-16 13:13:19] Code: 0 | Message: Too few arguments to function fa2\Registry::getErrors(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php on line 104 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 53
+[2022-12-17 21:14:37] Code: 0 | Message: Call to undefined method fa2\Registry::getUserRoles() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 102
+[2022-12-17 21:15:22] Code: 0 | Message: Call to undefined method fa2\Registry::getUserRoles() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 102
+[2022-12-17 21:16:05] Code: 0 | Message: Call to undefined method fa2\Registry::getAccess() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 102
+[2022-12-17 21:22:42] Code: 2 | Message: file_get_contents(/app/pages/test/access.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 19
+[2022-12-17 21:23:17] Code: 2 | Message: file_get_contents(/app/pages/test/access.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 19
+[2022-12-17 21:24:30] Code: 2 | Message: file_get_contents(/app/pages/test/access.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 19
+[2022-12-17 21:27:24] Code: 0 | Message: Call to undefined method fa2\basic\models\Model::addAccess() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 19
+[2022-12-17 21:28:10] Code: 0 | Message: Call to undefined method fa2\basic\models\Model::addAccess() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 21
+[2022-12-17 21:28:56] Code: 0 | Message: Call to undefined method fa2\Registry::addAccess() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 21

@@ -9,12 +9,15 @@ class Registry
     use traits\TSingleton;
 
     protected static array $language = [
-        "code" => "en",
-        "name" => "England"
+        'code' => 'en',
+        'name' => 'England'
     ];
     protected static array $userRoles = [];
     
-    protected static array $properties = [];
+    protected static array $errors = [
+        '404' => 'aaaaaaa',
+        '500' => 'aaaaaaa',
+    ];
     
 
     public function setLanguage($language)
@@ -27,15 +30,33 @@ class Registry
         return self::$language;
     }
 
-    public function setUserRoles($userRoles)
+    public function addAccess($value)
     {
-        self::$userRoles = $userRoles;
+        array_push(self::$userRoles, $value);
     }
 
-    public function getUserRoles(): array
+    public function getAccess(): array
     {
         return self::$userRoles;
     }
+
+    public function setError($key, $value)
+    {
+        self::$errors[$key] = $value;
+    }
+
+    public function getError($key)
+    {
+        return self::$errors[$key] ?? null;
+    }
+
+    public function getErrors()
+    {
+        return self::$errors;
+    }
+
+
+
 
     public function setProperty($key, $value)
     {
