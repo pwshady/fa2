@@ -104,6 +104,10 @@ class PageController extends Controller
         debug(App::$app->getErrors());
         echo '<h2>Settings</h2>';
         debug(App::$app->getSettings());
+        echo '<h2>Labels</h2>';
+        debug(App::$app->getLabels());
+        echo '<h2>Vidgets</h2>';
+        debug(App::$app->getVidgets());
         
     }
 

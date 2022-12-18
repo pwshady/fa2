@@ -143,3 +143,10 @@ Stack trace:
 [2022-12-18 13:26:58] Code: 0 | Message: array_key_exists() expects exactly 2 arguments, 1 given | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 114
 [2022-12-18 13:53:54] Code: 2 | Message: Undefined array key "labels" | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 117
 [2022-12-18 13:57:02] Code: 2 | Message: Undefined variable $k | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 115
+[2022-12-18 20:17:18] Code: 0 | Message: Call to undefined method fa2\Registry::getLabels() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 108
+[2022-12-18 20:31:42] Code: 2 | Message: Undefined variable $key | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 149
+[2022-12-18 21:13:45] Code: 0 | Message: Too few arguments to function fa2\Registry::setVidget(), 1 passed in /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/PageModel.php on line 81 and exactly 2 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 165
+[2022-12-18 21:20:18] Code: 0 | Message: Call to undefined method fa2\Registry::getVidgets() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 112
+[2022-12-18 21:52:45] Code: 0 | Message: array_shift() expects exactly 1 argument, 2 given | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 177
+[2022-12-18 22:02:29] Code: 2 | Message: Undefined variable $key | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 191
+[2022-12-18 22:03:04] Code: 0 | Message: Access to undeclared static property fa2\Registry::$vidget | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 191

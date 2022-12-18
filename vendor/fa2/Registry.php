@@ -42,9 +42,19 @@ class Registry
         ],
     ];
 
-    protected static array $vidgets = [];
+    protected static array $labels = [
+        'p__' => 'label'
+    ];
 
-    protected static array $labels = [];
+
+    protected static array $vidgets = [
+        [
+            'name' => '', 'complete' => false, 'code' => ''
+        ],
+        [
+            'name' => 'test', 'complete' => false, 'code' => ''
+        ]
+    ];
     
 
     public function setLanguage($language)
@@ -140,9 +150,57 @@ class Registry
         return self::$settings;
     }
 
-    public function setVidget(){}
+    public function setLabel($key, $value)
+    {
+        self::$labels[$key] = $value;
+    }
 
-    public function setLabel(){}
+    public function getLabel($key)
+    {
+        return self::$labels[$key] ?? null;
+    }
+
+    public function getLabels()
+    {
+        return self::$labels;
+    }
+
+    public function setVidget($name, $params)
+    {
+        $method = true;
+        $pos = true;
+        if (array_key_exists('method', $params)) {
+            $method = $params['method'];
+        }
+        if (array_key_exists('pos', $params)) {
+            $pos = $params['pos'];
+        }
+        if ($method) {
+            if ($pos) {
+                array_push(self::$vidgets, ['name' => $name, 'complete' => false, 'code' => '']);
+            } else {
+                array_unshift(self::$vidgets, ['name' => $name, 'complete' => false, 'code' => '']);
+            }
+        } else {
+            $result = [];
+            foreach (self::$vidgets as $vidget) {
+                if ($name != $vidget['name']) {
+                    array_push($result, $vidget);
+                }                               
+            }
+            self::$vidgets = $result;
+        }
+    }
+
+    public function getVidget($key)
+    {
+        return self::$vidgets[$key] ?? null;
+    }
+
+    public function getVidgets()
+    {
+        return self::$vidgets;
+    }
 
 
 
