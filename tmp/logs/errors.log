@@ -113,3 +113,33 @@ Stack trace:
 [2022-12-17 21:27:24] Code: 0 | Message: Call to undefined method fa2\basic\models\Model::addAccess() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 19
 [2022-12-17 21:28:10] Code: 0 | Message: Call to undefined method fa2\basic\models\Model::addAccess() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 21
 [2022-12-17 21:28:56] Code: 0 | Message: Call to undefined method fa2\Registry::addAccess() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 21
+[2022-12-17 21:57:44] Code: 0 | Message: Call to undefined method fa2\Registry::setErrors() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 31
+[2022-12-17 22:14:13] Code: 0 | Message: Call to undefined method fa2\Registry::setErrors() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 31
+[2022-12-18 06:35:39] Code: 0 | Message: Call to undefined method fa2\Registry::setErrors() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 31
+[2022-12-18 06:38:34] Code: 2 | Message: Undefined variable $acceess | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 30
+[2022-12-18 06:39:36] Code: 0 | Message: Call to undefined method fa2\Registry::setSettings() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 43
+[2022-12-18 06:42:55] Code: 0 | Message: Call to undefined method fa2\Registry::setVidgets() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 52
+[2022-12-18 06:43:39] Code: 0 | Message: Call to undefined method fa2\Registry::setVidgets() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 52
+[2022-12-18 06:45:49] Code: 0 | Message: Call to undefined method fa2\Registry::setVidgets() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 52
+[2022-12-18 07:04:18] Code: 0 | Message: Call to undefined method fa2\Registry::setVidgets() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 52
+[2022-12-18 07:05:17] Code: 0 | Message: Call to undefined method fa2\Registry::setLabels() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 52
+[2022-12-18 07:06:34] Code: 0 | Message: Call to undefined method fa2\Registry::setDatas() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 61
+[2022-12-18 07:08:54] Code: 0 | Message: Call to undefined method fa2\Registry::setDatas() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 61
+[2022-12-18 07:09:14] Code: 0 | Message: Class "fa2\basic\models\App" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/PageModel.php | Line: 28
+[2022-12-18 07:26:47] Code: 0 | Message: syntax error, unexpected token "public", expecting "," or ";" | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 29
+[2022-12-18 07:27:56] Code: 0 | Message: in_array() expects at least 2 arguments, 1 given | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 30
+[2022-12-18 07:46:10] Code: 0 | Message: Call to undefined method fa2\Registry::setErrors() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 33
+[2022-12-18 07:48:08] Code: 0 | Message: Call to undefined method fa2\Registry::setErrors() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 33
+[2022-12-18 07:48:30] Code: 0 | Message: Call to undefined method fa2\Registry::setSettings() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 43
+[2022-12-18 07:49:58] Code: 0 | Message: Call to undefined method fa2\Registry::setVidgets() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/PageModel.php | Line: 30
+[2022-12-18 07:50:13] Code: 0 | Message: Call to undefined method fa2\basic\models\PageModel::getVidgets() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/PageModel.php | Line: 22
+[2022-12-18 08:33:39] Code: 0 | Message: syntax error, unexpected token "=>", expecting ")" | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 44
+[2022-12-18 11:26:17] Code: 0 | Message: Call to undefined method fa2\basic\models\PageModel::getDatas() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/PageModel.php | Line: 21
+[2022-12-18 11:26:53] Code: 0 | Message: Call to undefined method fa2\Registry::setSettings() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/Model.php | Line: 45
+[2022-12-18 11:34:15] Code: 0 | Message: Call to undefined method fa2\Registry::getSettings() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 106
+[2022-12-18 11:40:53] Code: 2 | Message: Undefined variable $method | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 90
+[2022-12-18 11:55:35] Code: 2 | Message: Undefined variable $method | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 96
+[2022-12-18 11:57:26] Code: 2 | Message: Undefined variable $pos | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 100
+[2022-12-18 13:26:58] Code: 0 | Message: array_key_exists() expects exactly 2 arguments, 1 given | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 114
+[2022-12-18 13:53:54] Code: 2 | Message: Undefined array key "labels" | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 117
+[2022-12-18 13:57:02] Code: 2 | Message: Undefined variable $k | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 115

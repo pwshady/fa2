@@ -102,6 +102,8 @@ class PageController extends Controller
         debug(App::$app->getAccess());
         echo '<h2>Errors</h2>';
         debug(App::$app->getErrors());
+        echo '<h2>Settings</h2>';
+        debug(App::$app->getSettings());
         
     }
 
