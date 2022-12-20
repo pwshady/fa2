@@ -1,0 +1,1 @@
+<h1>Sample Single Page Controller</h1>

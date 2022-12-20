@@ -9,6 +9,7 @@ require_once dirname(__DIR__) . '/config/init.php';
 require_once FUNC . '/debug.php';
 
 session_start();
+$_SESSION['user_roles'] = ['admin'];
 new \fa2\App();
 
 //throw new Exception('Error');

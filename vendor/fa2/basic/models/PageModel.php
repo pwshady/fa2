@@ -19,7 +19,7 @@ class PageModel extends Model
 
     public function getAccess()
     {
-        if (file_exists(ROOT . $this->dir . 'access.json')) {            
+        if (file_exists(ROOT . $this->dir . 'access.json')) {          
             $access = json_decode(file_get_contents(ROOT . $this->dir . 'access.json'), true);
             App::$app->addAccess($access);
         }

@@ -150,3 +150,23 @@ Stack trace:
 [2022-12-18 21:52:45] Code: 0 | Message: array_shift() expects exactly 1 argument, 2 given | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 177
 [2022-12-18 22:02:29] Code: 2 | Message: Undefined variable $key | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 191
 [2022-12-18 22:03:04] Code: 0 | Message: Access to undeclared static property fa2\Registry::$vidget | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 191
+[2022-12-19 00:05:48] Code: 0 | Message: Array callback must have exactly two elements | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 88
+[2022-12-19 02:56:10] Code: 64 | Message: Declaration of fa2\basic\controllers\PageController::render($view) must be compatible with fa2\basic\controllers\Controller::render() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 125
+[2022-12-19 02:56:49] Code: 2 | Message: Undefined property: fa2\basic\controllers\MultiPageController::$view | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/MultiPageController.php | Line: 19
+[2022-12-19 03:00:03] Code: 2 | Message: require_once(/app/pages/test/v4/test/__/view.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/MultiPageController.php | Line: 21
+[2022-12-19 04:10:29] Code: 0 | Message: syntax error, unexpected token "=" | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/MultiPageController.php | Line: 24
+[2022-12-19 04:11:58] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/app/pages/test/v4/test/__/view.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/MultiPageController.php | Line: 21
+[2022-12-19 04:20:12] Code: 1 | Message: Allowed memory size of 536870912 bytes exhausted (tried to allocate 37765120 bytes) | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/MultiPageController.php | Line: 11
+[2022-12-19 04:20:12] Code: 8 | Message: ob_end_clean(): Failed to delete buffer. No buffer to delete | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 50
+[2022-12-19 04:26:38] Code: 1 | Message: Allowed memory size of 536870912 bytes exhausted (tried to allocate 262144 bytes) | File: /opt/lampp/htdocs/fa2/vendor/composer/ClassLoader.php | Line: 427
+[2022-12-19 04:26:38] Code: 8 | Message: ob_end_clean(): Failed to delete buffer. No buffer to delete | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 50
+[2022-12-19 04:51:52] Code: 0 | Message: Class "fa2\basic\controllers\basic\controllers\PageController" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/MultiPageController.php | Line: 24
+[2022-12-19 04:53:54] Code: 0 | Message: Class "fa2\basic\controllers\basic\controllers\MultiPageController" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/MultiPageController.php | Line: 24
+[2022-12-19 09:32:10] Code: 2 | Message: Undefined property: fa2\Registry::$getLanguage | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 150
+[2022-12-19 09:53:31] Code: 0 | Message: Illegal offset type | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 160
+[2022-12-19 09:53:58] Code: 0 | Message: Illegal offset type | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 160
+[2022-12-19 09:55:32] Code: 0 | Message: Illegal offset type | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 160
+[2022-12-19 09:56:55] Code: 0 | Message: Illegal offset type | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 160
+[2022-12-19 09:59:37] Code: 0 | Message: Illegal offset type | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 160
+[2022-12-19 10:01:31] Code: 0 | Message: Illegal offset type | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 160
+[2022-12-19 10:03:14] Code: 2 | Message: Array to string conversion | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 156

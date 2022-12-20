@@ -21,7 +21,7 @@ class Controller
         echo '<br>';
     }
 
-    public function render()
+    public function render($view)
     {
         echo '<br>View of dir ' . $this->dir;
     }
