@@ -7,8 +7,6 @@ class MultiPageController extends PageController
 
     public function run()
     {
-        echo '<h1>BasicMultiController</h1>';
-        echo '<h2>' . $this->dir . '</h2>';
         self::job();
         self::getView();
     }
@@ -21,7 +19,7 @@ class MultiPageController extends PageController
             $view = ob_get_clean();
             self::render($view);
         } else {
-            $controller = new MultiPageController('/vendor/fa2/pages/samples/__/', []);
+            $controller = new PageController('/vendor/fa2/pages/', ['samples', 'multi']);
             $controller->run();
         }
     }

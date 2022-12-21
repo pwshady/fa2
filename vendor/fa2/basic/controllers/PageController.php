@@ -124,23 +124,10 @@ class PageController extends Controller
 
     public function render($view)
     {
-        echo '<h1>Render</h1>';
-        echo '<h2>Language</h2>';
-        debug(App::$app->getLanguage());
-        echo '<h2>UserRoles</h2>';
-        debug(App::$app->getAccess());
-        echo '<h2>Errors</h2>';
-        debug(App::$app->getErrors());
-        echo '<h2>Settings</h2>';
-        debug(App::$app->getSettings());
-        echo '<h2>Labels</h2>';
-        debug(App::$app->getLabels());
-        echo '<h2>Vidgets</h2>';
-        debug(App::$app->getVidgets());
-        echo $view;
-        echo $this->dir;
         $html = '';
         $html .= self::headerCreate();
+        $html .= $view . PHP_EOL;
+        $html .= self::footerCreate();
         echo $html;
     }
 
@@ -148,11 +135,88 @@ class PageController extends Controller
     {
         $header_html = '<!doctype html>' . PHP_EOL;
         $header_html .= '<html lang="' . App::$app->getLanguage()['code'] . '">' . PHP_EOL;
+        $header_html .= '<head>' . PHP_EOL;
         $title = App::$app->getLabel(App::$app->getSetting('title')) ?? App::$app->getSetting('title');
         $header_html .= $title ? '<title>' . $title . '</title>' . PHP_EOL : '';
+        $charset = App::$app->getSetting('charset');
+        $header_html .= $charset ? '<meta charset="' . $charset . '">' . PHP_EOL : '';
+        $keywords = App::$app->getLabel(App::$app->getSetting('keywords')) ?? App::$app->getSetting('keywords');
+        $header_html .= $keywords ? '<meta name="keywords" content="' . $keywords . '">' . PHP_EOL : '';
+        $description = App::$app->getLabel(App::$app->getSetting('description')) ?? App::$app->getSetting('description');
+        $header_html .= $description ? '<meta name="description" content="' . $description . '">' . PHP_EOL : '';
+        $header_html .= self::createStrings('header_strings');
+        $header_html .= self::createStyles();
+        $header_html .= self::createScripts('header_scripts');
+        $header_html .= '</head>' . PHP_EOL;
         return $header_html;
     }
 
+    public function footerCreate()
+    {
+        $footer_html = '<footer>' . PHP_EOL;
+        $footer_html .= self::createStrings('footer_strings_top');
+        $footer_html .= self::createScripts('footer_scripts');
+        $footer_html .= self::createStrings('footer_strings_bottom');
+        $footer_html .= '</footer>' . PHP_EOL;
+        $footer_html .= '</html>' . PHP_EOL;
+        return $footer_html;
+    }
 
+    public function createStrings($key)
+    {
+        $html = '';
+        if (App::$app->getSetting($key)) {
+            foreach (App::$app->getSetting($key) as $string) {
+                $html .= $string['string'] ? $string['string'] . PHP_EOL : '';
+            }
+        }
+        return $html;
+    }
+
+    public function createStyles()
+    {
+        $html = '';
+        if (App::$app->getSetting('styles')) {
+            foreach (App::$app->getSetting('styles') as $string) {
+                $type = array_key_exists('type', $string) ? $string['type'] : '';
+                switch ($type){
+                    case 'css':
+                        $html .= self::getCss($string);
+                        break;
+                }
+            }
+        }
+        return $html;
+    }
+
+    public function getCss($string)
+    {
+        $rel = array_key_exists('rel', $string) ? $string['rel'] : 'stylesheet';
+        $media = array_key_exists('media', $string) ? $string['media'] : 'all';
+        $href = array_key_exists('href', $string) ? $string['href'] : '';
+        return '<link type="text/css" rel="' . $rel . '" media="' . $media . '" href="' . $href . '" />' . PHP_EOL;
+    }
+
+    public function createScripts($key)
+    {
+        $html = '';
+        if (App::$app->getSetting($key)) {
+            foreach (App::$app->getSetting($key) as $string) {
+                $type = array_key_exists('type', $string) ? $string['type'] : '';
+                switch ($type){
+                    case 'js':
+                        $html .= self::getJs($string);
+                        break;
+                }
+            }
+        }
+        return $html;
+    }
+
+    public function getJs($string)
+    {
+        $href = array_key_exists('href', $string) ? $string['href'] : '';
+        return '<script src="' . $href . '"></script>' . PHP_EOL;
+    }
 
 }

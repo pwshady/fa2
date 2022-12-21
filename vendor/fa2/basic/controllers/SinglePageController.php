@@ -7,8 +7,6 @@ class SinglePageController extends PageController
 
     public function run()
     {
-        echo '<h1>SingleController</h1>';
-        echo '<h2>' . $this->dir . '</h2>';
         self::job();
         self::getView();
     }
@@ -21,7 +19,7 @@ class SinglePageController extends PageController
             $view = ob_get_clean();
             self::render($view);
         } else {
-            $controller = new SinglePageController('/vendor/fa2/pages/samples/_/', []);
+            $controller = new PageController('/vendor/fa2/pages/', ['samples', 'single']);
             $controller->run();
         }
     }

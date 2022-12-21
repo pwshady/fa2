@@ -11,6 +11,3 @@ require_once FUNC . '/debug.php';
 session_start();
 $_SESSION['user_roles'] = ['admin'];
 new \fa2\App();
-
-//throw new Exception('Error');
-echo '<br>===========ok';

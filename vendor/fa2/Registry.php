@@ -28,16 +28,16 @@ class Registry
         'header_scripts' => [
             ['label' => '', 'type' => '', 'path' => '']
         ],
-        'header_string' => [
+        'header_strings' => [
             ['label' => '', 'string' => '']
         ],
         'footer_scripts' => [
             ['label' => '', 'type' => '', 'path' => '']
         ],
-        'footer_string_top' => [
+        'footer_strings_top' => [
             ['label' => '', 'string' => '']
         ],
-        'footer_string_bottom' => [
+        'footer_strings_bottom' => [
             ['label' => '', 'string' => '']
         ],
     ];
@@ -108,7 +108,11 @@ class Registry
         }
         switch ($method) {
             case 0:
+                if (is_array($value)) {
+                    self::$settings[$key][0] = $value;
+                } else {
                 self::$settings[$key] = $value;
+                }
                 break;
             case 1:
                 if ($pos) {
@@ -200,34 +204,6 @@ class Registry
     public function getVidgets()
     {
         return self::$vidgets;
-    }
-
-
-
-
-
-    public function setProperty($key, $value)
-    {
-        self::$properties[$key] = $value;
-    }
-
-    public function addProperty($key, $value)
-    {
-        if (array_key_exists($key, self::$properties)) {
-            self::$properties[$key] = array_merge(self::$properties[$key], $value);
-        } else {
-            self::$properties[$key] = $value;
-        }
-    }
-
-    public function getProperty($key)
-    {
-        return self::$properties[$key] ?? null;
-    }
-
-    public function getProperties(): array
-    {
-        return self::$properties;
     }
 
 }

@@ -170,3 +170,29 @@ Stack trace:
 [2022-12-19 09:59:37] Code: 0 | Message: Illegal offset type | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 160
 [2022-12-19 10:01:31] Code: 0 | Message: Illegal offset type | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 160
 [2022-12-19 10:03:14] Code: 2 | Message: Array to string conversion | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 156
+[2022-12-20 20:41:16] Code: 2 | Message: Undefined variable $sharset | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 154
+[2022-12-20 20:42:03] Code: 0 | Message: syntax error, unexpected token ":" | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 154
+[2022-12-20 20:43:18] Code: 2 | Message: Undefined variable $sharset | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 154
+[2022-12-20 20:46:17] Code: 2 | Message: Undefined variable $sharset | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 154
+[2022-12-21 03:56:42] Code: 2 | Message: Undefined array key "string" | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 201
+[2022-12-21 04:01:13] Code: 0 | Message: array_push(): Argument #1 ($array) must be of type array, null given | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 115
+[2022-12-21 04:02:24] Code: 2 | Message: Undefined array key "string" | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 201
+[2022-12-21 04:04:51] Code: 2 | Message: Undefined array key "type" | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 181
+[2022-12-21 04:06:04] Code: 0 | Message: array_key_exists() expects exactly 2 arguments, 1 given | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 181
+[2022-12-21 04:07:31] Code: 2 | Message: Array to string conversion | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 184
+[2022-12-21 07:13:26] Code: 0 | Message: array_key_exists(): Argument #2 ($array) must be of type array, string given | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 205
+[2022-12-21 07:16:17] Code: 0 | Message: array_key_exists(): Argument #2 ($array) must be of type array, string given | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 205
+[2022-12-21 07:21:19] Code: 0 | Message: array_key_exists(): Argument #2 ($array) must be of type array, string given | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 205
+[2022-12-21 07:43:14] Code: 0 | Message: Class "App" not found | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/samples/_/view.php | Line: 1
+[2022-12-21 07:53:15] Code: 2 | Message: Undefined property: fa2\Registry::$getLabel | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/samples/_/view.php | Line: 7
+[2022-12-21 07:54:14] Code: 2 | Message: Undefined property: fa2\Registry::$getLabel | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/samples/_/view.php | Line: 7
+[2022-12-21 07:54:58] Code: 2 | Message: Undefined property: fa2\Registry::$getLanguage | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/samples/_/view.php | Line: 7
+[2022-12-21 07:55:55] Code: 0 | Message: Illegal offset type | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 164
+[2022-12-21 07:57:14] Code: 0 | Message: Illegal offset type | File: /opt/lampp/htdocs/fa2/vendor/fa2/Registry.php | Line: 164
+[2022-12-21 08:01:00] Code: 2 | Message: Array to string conversion | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/samples/_/view.php | Line: 7
+[2022-12-21 08:36:52] Code: 1 | Message: Allowed memory size of 536870912 bytes exhausted (tried to allocate 8192 bytes) | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/PageModel.php | Line: 43
+[2022-12-21 08:36:52] Code: 8 | Message: ob_end_clean(): Failed to delete buffer. No buffer to delete | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 50
+[2022-12-21 08:37:25] Code: 1 | Message: Allowed memory size of 536870912 bytes exhausted (tried to allocate 8192 bytes) | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/PageModel.php | Line: 43
+[2022-12-21 08:37:25] Code: 8 | Message: ob_end_clean(): Failed to delete buffer. No buffer to delete | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 50
+[2022-12-21 08:38:42] Code: 1 | Message: Allowed memory size of 536870912 bytes exhausted (tried to allocate 8192 bytes) | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/PageModel.php | Line: 43
+[2022-12-21 08:38:42] Code: 8 | Message: ob_end_clean(): Failed to delete buffer. No buffer to delete | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 50
