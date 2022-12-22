@@ -14,7 +14,7 @@ class PageModel extends Model
         self::getErrors();
         self::getSettings();
         self::getLabels();
-        self::getVidgets();
+        self::getWidgets();
     }
 
     public function getAccess()
@@ -67,13 +67,13 @@ class PageModel extends Model
         }
     }
 
-    public function getVidgets()
+    public function getWidgets()
     {
-        if (file_exists(ROOT . $this->dir . 'vidgets.json')) {
-            $vidgets = json_decode(file_get_contents(ROOT . $this->dir . 'vidgets.json'), true);
-            if (is_array($vidgets)) {
-                foreach ($vidgets as $key => $value) {
-                    App::$app->setVidget($key, $value);
+        if (file_exists(ROOT . $this->dir . 'widgets.json')) {
+            $widgets = json_decode(file_get_contents(ROOT . $this->dir . 'widgets.json'), true);
+            if (is_array($widgets)) {
+                foreach ($widgets as $key => $value) {
+                    App::$app->setWidget($key, $value);
                 }
             }            
         }

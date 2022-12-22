@@ -51,7 +51,8 @@ class PageController extends Controller
                             $controller->run();
                         }
                     } else {
-                        echo '<h1>PageNotFound1</h1>';
+                        $controller = new PageController('/vendor/fa2/pages/', ['errors', '404']);
+                        $controller->run();
                     }                  
                 }
             } else {
@@ -81,8 +82,11 @@ class PageController extends Controller
                             array_shift($this->page);
                             $controller->run();
                         }
-                    }
-                }       
+                    }  else {
+                        $controller = new PageController('/vendor/fa2/pages/', ['errors', '404']);
+                        $controller->run();
+                    } 
+                }     
             }  
         }
     }
@@ -102,8 +106,8 @@ class PageController extends Controller
         }
         foreach ($access as $value) {
             if (!in_array($value, $user_roles)) {
-                echo 'Access Denide';
-                die;
+                $controller = new PageController('/vendor/fa2/pages/', ['errors', '500']);
+                $controller->run();
             }
         }
     }

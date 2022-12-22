@@ -12,18 +12,22 @@ class Controller
 
     public function run()
     {
-        echo '<br>run';
+ 
     }
 
     public function runModel()
     {
-        echo '<br>Model of dir ' . $this->dir;
-        echo '<br>';
+ 
     }
 
     public function render($view)
     {
-        echo '<br>View of dir ' . $this->dir;
+
+    }
+
+    public function runView()
+    {
+
     }
 
 }

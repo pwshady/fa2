@@ -1,1 +1,0 @@
-<h1>Sample Multi Page Controller</h1>

@@ -47,7 +47,7 @@ class Registry
     ];
 
 
-    protected static array $vidgets = [
+    protected static array $widgets = [
         [
             'name' => '', 'complete' => false, 'code' => ''
         ],
@@ -169,7 +169,7 @@ class Registry
         return self::$labels;
     }
 
-    public function setVidget($name, $params)
+    public function setWidget($name, $params)
     {
         $method = true;
         $pos = true;
@@ -181,29 +181,29 @@ class Registry
         }
         if ($method) {
             if ($pos) {
-                array_push(self::$vidgets, ['name' => $name, 'complete' => false, 'code' => '']);
+                array_push(self::$widgets, ['name' => $name, 'complete' => false, 'code' => '']);
             } else {
-                array_unshift(self::$vidgets, ['name' => $name, 'complete' => false, 'code' => '']);
+                array_unshift(self::$widgets, ['name' => $name, 'complete' => false, 'code' => '']);
             }
         } else {
             $result = [];
-            foreach (self::$vidgets as $vidget) {
-                if ($name != $vidget['name']) {
-                    array_push($result, $vidget);
+            foreach (self::$widgets as $widget) {
+                if ($name != $widget['name']) {
+                    array_push($result, $widget);
                 }                               
             }
-            self::$vidgets = $result;
+            self::$widgets = $result;
         }
     }
 
-    public function getVidget($key)
+    public function getWidget($key)
     {
-        return self::$vidgets[$key] ?? null;
+        return self::$widgets[$key] ?? null;
     }
 
-    public function getVidgets()
+    public function getWidgets()
     {
-        return self::$vidgets;
+        return self::$widgets;
     }
 
 }
