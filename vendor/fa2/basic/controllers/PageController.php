@@ -3,6 +3,7 @@
 namespace fa2\basic\controllers;
 
 use fa2\App;
+use fa2\Cache;
 
 class PageController extends Controller
 {
@@ -51,7 +52,7 @@ class PageController extends Controller
                             $controller->run();
                         }
                     } else {
-                        $controller = new PageController('/vendor/fa2/pages/', ['errors', '404']);
+                        $controller = new PageController('/vendor/fa2/pages', ['errors', '404']);
                         $controller->run();
                     }                  
                 }
@@ -83,7 +84,7 @@ class PageController extends Controller
                             $controller->run();
                         }
                     }  else {
-                        $controller = new PageController('/vendor/fa2/pages/', ['errors', '404']);
+                        $controller = new PageController('/vendor/fa2/pages', ['errors', '404']);
                         $controller->run();
                     } 
                 }     
@@ -106,7 +107,7 @@ class PageController extends Controller
         }
         foreach ($access as $value) {
             if (!in_array($value, $user_roles)) {
-                $controller = new PageController('/vendor/fa2/pages/', ['errors', '500']);
+                $controller = new PageController('/vendor/fa2/pages', ['errors', '500']);
                 $controller->run();
             }
         }
@@ -128,11 +129,12 @@ class PageController extends Controller
 
     public function render($view)
     {
+        self::createdWidgets();
         $html = '';
         $html .= self::headerCreate();
         $html .= $view . PHP_EOL;
         $html .= self::footerCreate();
-        echo $html;
+        return $html;
     }
 
     public function headerCreate()
@@ -223,4 +225,54 @@ class PageController extends Controller
         return '<script src="' . $href . '"></script>' . PHP_EOL;
     }
 
+    public function createdWidgets()
+    {
+        $widgets = (App::$app->getWidgets());
+        foreach ( $widgets as $widget ) {
+            if ( array_key_exists('name', $widget) ) {
+                if ( array_key_exists('cashe', $widget) ) {
+                    //self::
+                } else {
+                    self::createdWidget($widget);
+                }                   
+            } else {
+                echo 'setting error' . PHP_EOL;
+            }
+        }
+    }
+
+    public function createdWidget($widget)
+    {
+        $controller_path = 'app\widgets\\' . $widget['name'] . '\Controller';
+        echo $controller_path;
+        if ( class_exists($controller_path) ) 
+        {
+            echo 'widget ok' . PHP_EOL;
+        } else {
+            echo 'widget error' . PHP_EOL;
+        }
+    }
+
+    public function createdView($view_name)
+    {
+        if (App::$app->getSetting('cache')) {
+            $cache = Cache::getInstance();
+            $file_name = str_replace('/', '_', $this->dir) . $view_name;
+            echo $file_name;
+            $html = $cache->get($file_name);
+            if ( $html ) {
+                return $html;
+            }
+            $view_path = 'fa2\basic\views\View';
+            $view = new $view_path($this->dir, $view_name);
+            $view->run();
+            $html = self::render($view->render());
+            $cache->set($file_name, $html, App::$app->getSetting('cache'));
+            return $html;
+        }
+        $view_path = 'fa2\basic\views\View';
+        $view = new $view_path($this->dir, $view_name);
+        $view->run();
+        return self::render($view->render());
+    }
 }

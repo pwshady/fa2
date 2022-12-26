@@ -25,7 +25,7 @@ class MultiPageController extends PageController
                 $view->run();
                 self::render($view->render());
             } else {
-                $controller = new PageController('/vendor/fa2/pages/', ['samples', 'multi']);
+                $controller = new PageController('/vendor/fa2/pages', ['samples', 'multi']);
                 $controller->run();
             }
         }

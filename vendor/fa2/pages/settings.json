@@ -44,5 +44,8 @@
             "type": "js",
             "href": "https://aa.cdn.gmru.net/static/aa.mail.ru/js/mr_loader2.js"
         }
+    },
+    "9": {
+        "cache": "300"
     }
 }
