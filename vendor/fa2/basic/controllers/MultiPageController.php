@@ -20,10 +20,7 @@ class MultiPageController extends PageController
         } else {
             $view_name = App::$app->getSetting('view') ? App::$app->getSetting('view') : 'index';
             if ( file_exists(ROOT . $this->dir . $view_name . 'View.php') ) {
-                $view_path = 'fa2\basic\views\View';
-                $view = new $view_path($this->dir, $view_name);
-                $view->run();
-                self::render($view->render());
+                echo self::createdView($view_name);
             } else {
                 $controller = new PageController('/vendor/fa2/pages', ['samples', 'multi']);
                 $controller->run();

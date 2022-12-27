@@ -230,10 +230,27 @@ class PageController extends Controller
         $widgets = (App::$app->getWidgets());
         foreach ( $widgets as $widget ) {
             if ( array_key_exists('name', $widget) ) {
-                if ( array_key_exists('cashe', $widget) ) {
-                    //self::
+                $params = self::getWidgetParams($widget['name']);
+                if ( array_key_exists('cache', $widget) ) {
+                    if ( empty($params) ) {
+                        $file_name = 'w_' . $widget['name'];
+                        $cache = Cache::getInstance();
+                        $html = $cache->get($file_name);
+                        if ( $html ) {
+                            $widget['code'] = $html;
+                            $widget['complete'] = 1;
+                            App::$app->updateWidget($widget);
+                            debug(App::$app->getWidget($widget['name']));
+                        } else {
+                            self::createdWidget($widget, $params);
+                            debug(App::$app->getWidget($widget['name']));
+                            $cache->set($file_name, App::$app->getWidget($widget['name'])['code'], $widget['cache']);
+                        }
+                    } else {
+                        self::createdWidget($widget, $params);
+                    }
                 } else {
-                    self::createdWidget($widget);
+                    self::createdWidget($widget, $params);
                 }                   
             } else {
                 echo 'setting error' . PHP_EOL;
@@ -241,13 +258,19 @@ class PageController extends Controller
         }
     }
 
-    public function createdWidget($widget)
+    public function createdWidget($widget, $params)
     {
         $controller_path = 'app\widgets\\' . $widget['name'] . '\Controller';
-        echo $controller_path;
-        if ( class_exists($controller_path) ) 
-        {
-            echo 'widget ok' . PHP_EOL;
+        if ( class_exists($controller_path) ) {
+            $controller = new $controller_path($this->dir, $params);
+            if (method_exists($controller, 'run')) {
+                $controller->run();
+            }
+            if (method_exists($controller, 'render')) {
+                $widget['code'] = $controller->render();
+            }
+            $widget['complete'] = 1;
+            debug(App::$app->updateWidget($widget));
         } else {
             echo 'widget error' . PHP_EOL;
         }
@@ -256,9 +279,9 @@ class PageController extends Controller
     public function createdView($view_name)
     {
         if (App::$app->getSetting('cache')) {
+
             $cache = Cache::getInstance();
-            $file_name = str_replace('/', '_', $this->dir) . $view_name;
-            echo $file_name;
+            $file_name = 'p' . str_replace('/', '_', $this->dir) . $view_name;
             $html = $cache->get($file_name);
             if ( $html ) {
                 return $html;
@@ -274,5 +297,11 @@ class PageController extends Controller
         $view = new $view_path($this->dir, $view_name);
         $view->run();
         return self::render($view->render());
+    }
+
+    public function getWidgetParams($name)
+    {
+        $params = [];
+        return $params;
     }
 }

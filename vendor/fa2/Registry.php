@@ -180,10 +180,14 @@ class Registry
             $pos = $params['pos'];
         }
         if ($method) {
+            $widget = ['name' => $name, 'complete' => false, 'code' => ''];
+            if ( array_key_exists('cache', $params)) {
+                $widget['cache'] = $params['cache'];
+            }
             if ($pos) {
-                array_push(self::$widgets, ['name' => $name, 'complete' => false, 'code' => '']);
+                array_push(self::$widgets, $widget);
             } else {
-                array_unshift(self::$widgets, ['name' => $name, 'complete' => false, 'code' => '']);
+                array_unshift(self::$widgets, $widget);
             }
         } else {
             $result = [];
@@ -196,14 +200,33 @@ class Registry
         }
     }
 
-    public function getWidget($key)
+    public function getWidget($name)
     {
-        return self::$widgets[$key] ?? null;
+        foreach ( self::$widgets as $key => $value) {
+            if ( array_key_exists('name', $value) ) {
+                if ( $value['name'] == $name ) 
+                {
+                    return $value;
+                }
+            }
+        }
+        return null;
     }
 
     public function getWidgets()
     {
         return self::$widgets;
+    }
+
+    public function updateWidget($widget)
+    {
+        foreach ( self::$widgets as $key => $value) {
+            if ( array_key_exists('name', $value) ) {
+                if ( $widget['name'] == $value['name'] ) {
+                    self::$widgets[$key] = $widget;
+                }
+            }
+        }
     }
 
 }

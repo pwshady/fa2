@@ -1,6 +1,7 @@
 {
     "language": {
-        "pos": 0
+        "pos": 0,
+        "cache": 60
     },
     "test": {
         "method": 0
