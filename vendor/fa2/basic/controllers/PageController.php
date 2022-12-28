@@ -10,10 +10,7 @@ class PageController extends Controller
 
     public string $controller_path = 'fa2\basic\controllers\PageController';
 
-    public function __construct(public $dir, public $page)
-    {
-
-    }
+    public function __construct(public $dir, public $page){}
 
     public function run()
     {
@@ -129,7 +126,6 @@ class PageController extends Controller
 
     public function render($view)
     {
-        self::createdWidgets();
         $html = '';
         $html .= self::headerCreate();
         $html .= $view . PHP_EOL;
@@ -230,7 +226,7 @@ class PageController extends Controller
         $widgets = (App::$app->getWidgets());
         foreach ( $widgets as $widget ) {
             if ( array_key_exists('name', $widget) ) {
-                $params = self::getWidgetParams($widget['name']);
+                $params = self::getParams('w_' . $widget['name']);
                 if ( array_key_exists('cache', $widget) ) {
                     if ( empty($params) ) {
                         $file_name = 'w_' . $widget['name'];
@@ -240,10 +236,8 @@ class PageController extends Controller
                             $widget['code'] = $html;
                             $widget['complete'] = 1;
                             App::$app->updateWidget($widget);
-                            debug(App::$app->getWidget($widget['name']));
                         } else {
                             self::createdWidget($widget, $params);
-                            debug(App::$app->getWidget($widget['name']));
                             $cache->set($file_name, App::$app->getWidget($widget['name'])['code'], $widget['cache']);
                         }
                     } else {
@@ -286,21 +280,24 @@ class PageController extends Controller
             if ( $html ) {
                 return $html;
             }
-            $view_path = 'fa2\basic\views\View';
+            self::createdWidgets();
+            $view_path = 'fa2\basic\views\PageView';
             $view = new $view_path($this->dir, $view_name);
             $view->run();
             $html = self::render($view->render());
             $cache->set($file_name, $html, App::$app->getSetting('cache'));
             return $html;
         }
-        $view_path = 'fa2\basic\views\View';
+        self::createdWidgets();
+        $view_path = 'fa2\basic\views\PageView';
         $view = new $view_path($this->dir, $view_name);
         $view->run();
         return self::render($view->render());
     }
 
-    public function getWidgetParams($name)
+    public function getParams($name)
     {
+        return null;
         $params = [];
         return $params;
     }

@@ -10,7 +10,7 @@ class Controller
 
     public function render()
     {
-        return 'test widget';
+        return 'test widget aaaaa';
     }
 
 }
