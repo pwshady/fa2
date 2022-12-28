@@ -229,7 +229,7 @@ class PageController extends Controller
                 $params = self::getParams('w_' . $widget['name']);
                 if ( array_key_exists('cache', $widget) ) {
                     if ( empty($params) ) {
-                        $file_name = 'w_' . $widget['name'];
+                        $file_name = 'w_' . App::$app->getLanguage()['code'] . '_' . $widget['name'];
                         $cache = Cache::getInstance();
                         $html = $cache->get($file_name);
                         if ( $html ) {
@@ -275,7 +275,7 @@ class PageController extends Controller
         if (App::$app->getSetting('cache')) {
 
             $cache = Cache::getInstance();
-            $file_name = 'p' . str_replace('/', '_', $this->dir) . $view_name;
+            $file_name = 'p_'. App::$app->getLanguage()['code'] . str_replace('/', '_', $this->dir) . $view_name;
             $html = $cache->get($file_name);
             if ( $html ) {
                 return $html;

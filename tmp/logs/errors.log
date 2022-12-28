@@ -36,3 +36,15 @@ Stack trace:
 #5 {main}
   thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
 [2022-12-28 05:31:15] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-28 07:08:09] Code: 0 | Message: Undefined constant fa2\App::app | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 278
+[2022-12-28 07:08:09] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-28 07:08:09] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Undefined const...', '/opt/lampp/htdo...', 278)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-28 07:08:09] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
