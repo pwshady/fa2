@@ -226,7 +226,7 @@ class PageController extends Controller
         $widgets = (App::$app->getWidgets());
         foreach ( $widgets as $widget ) {
             if ( array_key_exists('name', $widget) ) {
-                $params = self::getParams('w_' . $widget['name']);
+                $params = self::getParams('w_' . $widget['name'] . '_');
                 if ( array_key_exists('cache', $widget) ) {
                     if ( empty($params) ) {
                         $file_name = 'w_' . App::$app->getLanguage()['code'] . '_' . $widget['name'];
@@ -264,7 +264,7 @@ class PageController extends Controller
                 $widget['code'] = $controller->render();
             }
             $widget['complete'] = 1;
-            debug(App::$app->updateWidget($widget));
+            App::$app->updateWidget($widget);
         } else {
             echo 'widget error' . PHP_EOL;
         }
@@ -297,8 +297,19 @@ class PageController extends Controller
 
     public function getParams($name)
     {
-        return null;
         $params = [];
+        foreach ( $_GET as $key => $value ) {
+            if ( str_starts_with($key, $name ) ) {
+                $key_arr = explode('_', $key, 3);
+                $params[$key_arr[2]] = ['value' => $value, 'method' => 'GET'];
+            }
+        }
+        foreach ( $_POST as $key => $value ) {
+            if ( str_starts_with($key, $name ) ) {
+                $key_arr = explode('_', $key, 3);
+                $params[$key_arr[2]] = ['value' => $value, 'method' => 'POST'];
+            }
+        }
         return $params;
     }
 }

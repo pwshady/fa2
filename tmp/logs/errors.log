@@ -48,3 +48,755 @@ Stack trace:
 #5 {main}
   thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
 [2022-12-28 07:08:09] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:49:44] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:49:44] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:49:44] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:49:44] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:49:44] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:50:32] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:50:32] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:50:32] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:50:32] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:50:32] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:50:56] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:50:56] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:50:56] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:50:56] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:50:56] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:18] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:51:18] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:18] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:18] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:18] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:51:25] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:51:25] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:51:25] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:25] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:31] Code: 2 | Message: Undefined variable $w_language | File: /opt/lampp/htdocs/fa2/vendor/fa2/pages/errors/404/_/indexView.php | Line: 3
+[2022-12-30 03:51:31] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:31] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:31] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 03:51:31] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 06:55:42] Code: 0 | Message: Class "app\widgets\basedevauth\ModulController" not found | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 7
+[2022-12-30 06:55:42] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 06:55:42] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Class "app\\widg...', '/opt/lampp/htdo...', 7)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 06:55:42] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 06:57:39] Code: 0 | Message: Class "app\widgets\basedevauth\ModulController" not found | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 9
+[2022-12-30 06:57:39] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 06:57:39] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Class "app\\widg...', '/opt/lampp/htdo...', 9)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 06:57:39] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 06:59:04] Code: 0 | Message: Class "app\widgets\basedevauth\ModulController" not found | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 9
+[2022-12-30 06:59:04] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 06:59:04] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Class "app\\widg...', '/opt/lampp/htdo...', 9)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 06:59:04] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 06:59:47] Code: 64 | Message: Declaration of app\widgets\basedevauth\Controller::render() must be compatible with fa2\basic\controllers\Controller::render($view) | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 13
+[2022-12-30 06:59:47] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:01:15] Code: 64 | Message: Declaration of app\widgets\basedevauth\Controller::render() must be compatible with fa2\basic\controllers\Controller::render($view) | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 13
+[2022-12-30 07:01:15] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:01:44] Code: 0 | Message: Too few arguments to function fa2\basic\controllers\Controller::render(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php on line 264 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/Controller.php | Line: 25
+[2022-12-30 07:01:44] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:01:44] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Too few argumen...', '/opt/lampp/htdo...', 25)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:01:44] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:02:34] Code: 0 | Message: Too few arguments to function fa2\basic\controllers\Controller::render(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php on line 264 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/Controller.php | Line: 25
+[2022-12-30 07:02:34] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:02:34] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Too few argumen...', '/opt/lampp/htdo...', 25)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:02:34] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:03:26] Code: 0 | Message: Too few arguments to function fa2\basic\controllers\Controller::render(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php on line 264 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/Controller.php | Line: 25
+[2022-12-30 07:03:26] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:03:26] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Too few argumen...', '/opt/lampp/htdo...', 25)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:03:26] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:05:40] Code: 0 | Message: Too few arguments to function fa2\basic\controllers\Controller::render(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php on line 264 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/Controller.php | Line: 25
+[2022-12-30 07:05:40] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:05:40] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Too few argumen...', '/opt/lampp/htdo...', 25)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:05:40] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:06:19] Code: 0 | Message: Too few arguments to function fa2\basic\controllers\Controller::render(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php on line 264 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/Controller.php | Line: 25
+[2022-12-30 07:06:19] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:06:19] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Too few argumen...', '/opt/lampp/htdo...', 25)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:06:19] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:06:54] Code: 64 | Message: Declaration of app\widgets\basedevauth\Controller::render() must be compatible with fa2\basic\controllers\Controller::render($view) | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 15
+[2022-12-30 07:06:54] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:07:36] Code: 64 | Message: Declaration of fa2\basic\controllers\PageController::render($view) must be compatible with fa2\basic\controllers\Controller::render() | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php | Line: 127
+[2022-12-30 07:07:36] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:08:25] Code: 0 | Message: Too few arguments to function app\widgets\basedevauth\Controller::render(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php on line 264 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 15
+[2022-12-30 07:08:25] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:08:25] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Too few argumen...', '/opt/lampp/htdo...', 15)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:08:25] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:08:45] Code: 64 | Message: Declaration of app\widgets\basedevauth\Controller::render() must be compatible with fa2\basic\controllers\Controller::render($view) | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 15
+[2022-12-30 07:08:45] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:11:26] Code: 0 | Message: Too few arguments to function app\widgets\basedevauth\Controller::render(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php on line 264 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 15
+[2022-12-30 07:11:26] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:11:26] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Too few argumen...', '/opt/lampp/htdo...', 15)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:11:26] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:12:23] Code: 0 | Message: Too few arguments to function fa2\basic\controllers\Controller::render(), 0 passed in /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/PageController.php on line 264 and exactly 1 expected | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/controllers/Controller.php | Line: 25
+[2022-12-30 07:12:23] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:12:23] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Too few argumen...', '/opt/lampp/htdo...', 25)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(ArgumentCountError))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:12:23] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:53:50] Code: 0 | Message: Call to undefined function app\widgets\basedevauth\getWidgetName() | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 15
+[2022-12-30 07:53:50] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:53:50] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Call to undefin...', '/opt/lampp/htdo...', 15)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:53:50] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:54:28] Code: 0 | Message: Call to undefined function app\widgets\basedevauth\getWidgetName() | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 15
+[2022-12-30 07:54:28] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:54:28] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Call to undefin...', '/opt/lampp/htdo...', 15)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:54:28] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:54:55] Code: 0 | Message: Call to undefined function app\widgets\basedevauth\getWidgetName() | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 15
+[2022-12-30 07:54:55] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:54:55] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Call to undefin...', '/opt/lampp/htdo...', 15)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 07:54:55] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:25:16] Code: 0 | Message: Call to undefined function app\widgets\basedevauth\array_key_exist() | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 27
+[2022-12-30 13:25:16] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:25:16] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Call to undefin...', '/opt/lampp/htdo...', 27)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:25:16] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:29:33] Code: 0 | Message: Call to undefined function app\widgets\basedevauth\array_key_exist() | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 28
+[2022-12-30 13:29:33] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:29:33] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Call to undefin...', '/opt/lampp/htdo...', 28)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:29:33] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:55:59] Code: 0 | Message: Call to undefined method app\widgets\basedevauth\Controller::getMiniHtml() | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 39
+[2022-12-30 13:55:59] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:55:59] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Call to undefin...', '/opt/lampp/htdo...', 39)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:55:59] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:56:45] Code: 2 | Message: Undefined property: app\widgets\basedevauth\Controller::$dir | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 56
+[2022-12-30 13:56:45] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:56:45] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:56:45] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:56:45] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:57:45] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/app/widgets/basedevauthminiView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 56
+[2022-12-30 13:57:45] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:57:45] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:57:45] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 13:57:45] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 15:20:14] Code: 0 | Message: Class "fa2\basic\models\ModulModel" not found | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 30
+[2022-12-30 15:20:14] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 15:20:14] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Class "fa2\\basi...', '/opt/lampp/htdo...', 30)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 15:20:14] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 15:24:08] Code: 64 | Message: Cannot declare class fa2\basic\models\PageModel, because the name is already in use | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/ModulModel.php | Line: 7
+[2022-12-30 15:24:08] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 15:25:21] Code: 64 | Message: Cannot declare class fa2\basic\models\PageModel, because the name is already in use | File: /opt/lampp/htdocs/fa2/vendor/fa2/basic/models/ModulModel.php | Line: 7
+[2022-12-30 15:25:21] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 15:26:11] Code: 2 | Message: Undefined property: app\widgets\basedevauth\Controller::$dir | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 30
+[2022-12-30 15:26:11] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 15:26:11] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 15:26:11] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 15:26:11] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 16:54:06] Code: 2 | Message: Undefined array key "login" | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/formView.php | Line: 12
+[2022-12-30 16:54:06] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 16:54:06] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 16:54:06] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 16:54:06] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 16:56:30] Code: 2 | Message: Undefined array key "login" | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/formView.php | Line: 12
+[2022-12-30 16:56:30] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 16:56:30] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 16:56:30] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-30 16:56:30] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 01:24:26] Code: 2 | Message: Undefined variable $widget_name | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 20
+[2022-12-31 01:24:26] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 01:24:26] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 01:24:26] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 01:24:26] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 04:50:43] Code: 64 | Message: Cannot declare class app\widgets\basedevauth\Controller, because the name is already in use | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Controller.php | Line: 9
+[2022-12-31 04:50:43] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 07:59:19] Code: 2 | Message: file_get_contents(/opt/lampp/htdocs/fa2/app/pageslanguages.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 11
+[2022-12-31 07:59:19] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 07:59:19] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 07:59:19] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 07:59:19] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:00:21] Code: 2 | Message: file_get_contents(/opt/lampp/htdocs/fa2/app/pageslanguages.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 11
+[2022-12-31 08:00:21] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:00:21] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:00:21] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:00:21] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:00:48] Code: 2 | Message: file_get_contents(/opt/lampp/htdocs/fa2/app/pageslanguages.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 11
+[2022-12-31 08:00:48] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:00:48] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:00:48] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:00:48] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:25] Code: 2 | Message: file_get_contents(/opt/lampp/htdocs/fa2/app/pages/languages.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 11
+[2022-12-31 08:01:25] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:25] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:25] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:25] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:45] Code: 2 | Message: file_get_contents(/opt/lampp/htdocs/fa2/app/pages/languages.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 11
+[2022-12-31 08:01:45] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:45] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:45] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:45] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:47] Code: 2 | Message: file_get_contents(/opt/lampp/htdocs/fa2/app/pages/languages.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 11
+[2022-12-31 08:01:47] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:47] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:47] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:01:47] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:02:52] Code: 2 | Message: file_get_contents(/opt/lampp/htdocs/fa2/app/pages/languages.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 11
+[2022-12-31 08:02:52] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:02:52] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:02:52] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:02:52] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:04:04] Code: 2 | Message: file_get_contents(/opt/lampp/htdocs/fa2/app/pages/languages.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 11
+[2022-12-31 08:04:04] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:04:04] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:04:04] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:04:04] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:04:06] Code: 2 | Message: file_get_contents(/opt/lampp/htdocs/fa2/app/pages/languages.json): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 11
+[2022-12-31 08:04:06] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:04:06] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:04:06] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 08:04:06] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:09:20] Code: 2 | Message: Undefined array key "code" | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 19
+[2022-12-31 09:09:20] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:09:20] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:09:20] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:09:20] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:11:56] Code: 2 | Message: Undefined array key "code" | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 19
+[2022-12-31 09:11:56] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:11:56] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:11:56] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:11:56] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:13:59] Code: 2 | Message: Undefined array key "code" | File: /opt/lampp/htdocs/fa2/app/widgets/languageselector/Model.php | Line: 19
+[2022-12-31 09:13:59] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:13:59] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:13:59] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2022-12-31 09:13:59] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:05] Code: 2 | Message: Undefined property: app\widgets\basedevauth\Controller::$params | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 21
+[2023-01-02 01:56:05] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:05] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:05] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:05] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:52] Code: 2 | Message: Undefined property: app\widgets\basedevauth\Controller::$params | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 21
+[2023-01-02 01:56:52] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:52] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:52] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:52] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:55] Code: 2 | Message: Undefined property: app\widgets\basedevauth\Controller::$params | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 21
+[2023-01-02 01:56:55] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:55] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:55] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 01:56:55] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:00] Code: 2 | Message: Undefined variable $login | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/formView.php | Line: 12
+[2023-01-02 03:17:00] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:00] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:00] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:00] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:54] Code: 2 | Message: Undefined array key "w_basedevauth_" | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 38
+[2023-01-02 03:17:54] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:54] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:54] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:54] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:56] Code: 2 | Message: Undefined array key "w_basedevauth_" | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 38
+[2023-01-02 03:17:56] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:56] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:56] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:17:56] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:19:31] Code: 2 | Message: Undefined variable $login | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/formView.php | Line: 12
+[2023-01-02 03:19:31] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:19:31] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:19:31] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:19:31] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:20:26] Code: 2 | Message: Undefined variable $login | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/formView.php | Line: 12
+[2023-01-02 03:20:26] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:20:26] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:20:26] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:20:26] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:22:54] Code: 2 | Message: Undefined variable $login | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/formView.php | Line: 12
+[2023-01-02 03:22:54] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:22:54] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:22:54] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:22:54] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:24:52] Code: 2 | Message: Undefined variable $login | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/formView.php | Line: 12
+[2023-01-02 03:24:52] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:24:52] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:24:52] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 03:24:52] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 08:30:27] Code: 2 | Message: Undefined array key "login" | File: /opt/lampp/htdocs/fa2/app/widgets/basedevauth/Controller.php | Line: 30
+[2023-01-02 08:30:27] Code: 0 | Message: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 08:30:27] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 08:30:27] Code: 1 | Message: Uncaught Error: Failed opening required '/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(42): fa2\ErrorHandler->displayError(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#1 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): fa2\ErrorHandler->errorHandler(2, 'require_once(/o...', '/opt/lampp/htdo...', 35)
+#2 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(35): require_once('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php(24): fa2\ErrorHandler->displayError(0, 'Failed opening ...', '/opt/lampp/htdo...', 35)
+#4 [internal function]: fa2\ErrorHandler->exceptionHandler(Object(Error))
+#5 {main}
+  thrown | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35
+[2023-01-02 08:30:27] Code: 2 | Message: require_once(/opt/lampp/htdocs/fa2/vendor/fa2/pages/_error404/indexView.php): Failed to open stream: No such file or directory | File: /opt/lampp/htdocs/fa2/vendor/fa2/ErrorHandler.php | Line: 35

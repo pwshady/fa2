@@ -7,9 +7,9 @@ use fa2\App;
 class Controller
 {
 
-    public function __construct($dir)
+    public function __construct()
     {
-        echo '<br>=====dir: ' . $dir;
+
     }
 
     public function run()
@@ -22,10 +22,7 @@ class Controller
  
     }
 
-    public function render($view)
-    {
 
-    }
 
     public function runView()
     {

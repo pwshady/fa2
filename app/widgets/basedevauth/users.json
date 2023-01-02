@@ -1,0 +1,8 @@
+{
+    "developer": {
+        "password": "1234",
+        "user_roles": {
+            "0": "developer"
+        }
+    }
+}

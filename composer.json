@@ -16,5 +16,7 @@
             "traits\\": "vendor/fa2/traits"
         }
     },
-    "require": {}
+    "require": {
+        "twbs/bootstrap": "5.0.2"
+    }
 }

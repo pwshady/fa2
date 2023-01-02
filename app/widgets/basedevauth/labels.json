@@ -1,0 +1,18 @@
+{
+    "ru": {
+        "development": "Разработка",
+        "signinlabel": "Войдите, чтобы начать сеанс",
+        "login": "Логин",
+        "password": "Пароль",
+        "remember": "Запомнить меня",
+        "signin": "Войти"
+    },
+    "en": {
+        "development": "Development",
+        "signinlabel": "Sign in to start your session",
+        "login": "Login",
+        "password": "Password",
+        "remember": "Remember me",
+        "signin": "Sign in"
+    }
+}

@@ -46,15 +46,14 @@ class Registry
         'p__' => 'label'
     ];
 
-
-    protected static array $widgets = [
-        [
-            'name' => '', 'complete' => false, 'code' => ''
-        ],
-        [
-            'name' => 'test', 'complete' => false, 'code' => ''
-        ]
-    ];
+    /*
+    *Key: 'name' - widget name. Required key
+    *Key: 'complete' - Value 1 after code processing
+    *Key: 'code' - Html code resulting from the creation of the widget
+    *Key: 'cache' - Html code caching time in seconds. Optional key
+    *Key: 'view' - View selector. Optional key
+    */
+    protected static array $widgets = [];
     
 
     public function setLanguage($language)
@@ -183,6 +182,9 @@ class Registry
             $widget = ['name' => $name, 'complete' => false, 'code' => ''];
             if ( array_key_exists('cache', $params)) {
                 $widget['cache'] = $params['cache'];
+            }
+            if ( array_key_exists('view', $params)) {
+                $widget['view'] = $params['view'];
             }
             if ($pos) {
                 array_push(self::$widgets, $widget);
