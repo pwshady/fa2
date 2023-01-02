@@ -16,4 +16,16 @@ class Model
         return [];
     }
 
+    public function getConfig($dir, $key)
+    {
+        if (file_exists($dir . '/configs.json')) {           
+            $configs = json_decode(file_get_contents($dir . '/configs.json'), true);
+            if ( isset($configs[$key]) ) {
+                $value = $configs[$key];
+                return $value;
+            }
+        }
+        return [];
+    }
+
 }

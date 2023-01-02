@@ -8,8 +8,8 @@ use fa2\App;
 
 class Controller extends ModulController
 {
-
-    private $base_url = 'https://localhost/fa2/ru/';
+    private $auth_url;
+    private $base_url;
     private $widget_name;
     private $prefix;
     private $condition;
@@ -18,31 +18,46 @@ class Controller extends ModulController
     {
         $this->widget_name = self::getWidgetName(__DIR__);
         $this->prefix = 'w_' . $this->widget_name . '_';
-        if ( isset($_SESSION[$this->prefix]['condition']) && $_SESSION[$this->prefix]['condition'] == 1 ){
-            echo 'rrrrrrrrrrrrrrrrrrrrrrrr';
-
-            $_SESSION[$this->prefix]['condition'] = 0;
-            debug($_SESSION);
+        $model = new Model();
+        $this->base_url = str_replace('..', App::$app->getLanguage()['code'], $model->getConfig(__DIR__, 'base_url'));
+        if ( isset($this->params['exit']) ) {            
+            $_SESSION['user_roles'] = [];
+            $_SESSION[$this->prefix]['condition'] == 0;
+            header('Location: ' . $this->base_url );
             die;
+        }
+        if ( isset($_SESSION[$this->prefix]['condition']) && $_SESSION[$this->prefix]['condition'] == 1 ){
+            if ( $this->base_url == rtrim( $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], '/' ) ) {
+                $this->auth_url = str_replace('..', App::$app->getLanguage()['code'], $model->getConfig(__DIR__, 'auth_url'));
+                header('Location: ' . $this->auth_url );
+                die;
+            }
         }
         if ( isset($this->params['remember']['value']) ) {
             $_SESSION[$this->prefix]['remember'] = 'checked';
             $_SESSION[$this->prefix]['login'] = htmlspecialchars( $this->params['login']['value'] ) ?? '';
             $_SESSION[$this->prefix]['password'] = htmlspecialchars( $this->params['password']['value'] ) ?? '';
+            
         } else {
-            $_SESSION[$this->prefix]['remember'] = '';
-            $_SESSION[$this->prefix]['login'] = '';
-            $_SESSION[$this->prefix]['password'] = '';
+            if( !empty( $this->params ) ) {
+                if ( !isset($this->params['remember']) ) {
+                    $_SESSION[$this->prefix]['remember'] = '';
+                    $_SESSION[$this->prefix]['login'] = '';
+                    $_SESSION[$this->prefix]['password'] = '';
+                }
+            }
         }
         if ( isset($this->params['login']['value']) ) {
             $users = [];
-            $model = new Model();
             $users = $model->getUsers();
             if ( isset($users[$this->params['login']['value']]) ) {
-                if ( isset($users[$this->params['login']['value']]['password']) && $users[$this->params['login']['value']]['password'] = $this->params['password']['value']) {
+                if ( isset($users[$this->params['login']['value']]['password']) && $users[$this->params['login']['value']]['password'] == $this->params['password']['value']) {
                     if ( isset($users[$this->params['login']['value']]['user_roles']) ) {
                         $_SESSION['user_roles'] = $users[$this->params['login']['value']]['user_roles'];
                         $_SESSION[$this->prefix]['condition'] = 1;
+                        $this->auth_url = str_replace('..', App::$app->getLanguage()['code'], $model->getConfig(__DIR__, 'auth_url'));
+                        header('Location: ' . $this->auth_url );
+                        die;
                     } else {
                         echo 'file is not correct';
                     }
@@ -54,7 +69,7 @@ class Controller extends ModulController
             }
         
         }
-        debug($_SESSION);
+
         //$session_key = $prefix . 'condition';
         //if ( array_key_exists($session_key, $_SESSION) ) {
         //    $this->condition = $_SESSION[$session_key];
@@ -104,7 +119,5 @@ class Controller extends ModulController
         require_once __DIR__ . '/miniView.php';
         return ob_get_clean();
     }
-
-
 
 }

@@ -104,8 +104,11 @@ class PageController extends Controller
         }
         foreach ($access as $value) {
             if (!in_array($value, $user_roles)) {
+                //=============================================
+                App::$app->cleanAccess();
                 $controller = new PageController('/vendor/fa2/pages', ['errors', '500']);
                 $controller->run();
+                die;
             }
         }
     }

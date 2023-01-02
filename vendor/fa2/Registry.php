@@ -76,6 +76,11 @@ class Registry
         return self::$userRoles;
     }
 
+    public function cleanAccess()
+    {
+        self::$userRoles = [];
+    }
+
     public function setError($key, $value)
     {
         self::$errors[$key] = $value;
