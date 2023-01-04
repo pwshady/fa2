@@ -1,4 +1,6 @@
 <body>
 <?=$w_basedevauth?>
-<div><?=$w_languageselector?></div>
+<div>
+<?=$w_languageselector?>
+</div>
 </body>

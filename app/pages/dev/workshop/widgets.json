@@ -1,5 +1,6 @@
 {
     "basedevauth": {
         "view": "mini"
-    }
+    },
+    "languageselector": {}
 }

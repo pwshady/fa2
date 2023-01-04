@@ -25,7 +25,10 @@ class Controller extends ModulController
 
     public function render()
     {
-        return '';
+
+        ob_start();
+        require_once __DIR__ . '/indexView.php';
+        return ob_get_clean();
     }
 
 }

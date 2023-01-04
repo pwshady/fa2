@@ -22,17 +22,21 @@ class Controller extends ModulController
         $this->base_url = str_replace('..', App::$app->getLanguage()['code'], $model->getConfig(__DIR__, 'base_url'));
         if ( isset($this->params['exit']) ) {            
             $_SESSION['user_roles'] = [];
-            $_SESSION[$this->prefix]['condition'] == 0;
+            unset( $_SESSION[$this->prefix]['condition'] );
             header('Location: ' . $this->base_url );
             die;
         }
-        if ( isset($_SESSION[$this->prefix]['condition']) && $_SESSION[$this->prefix]['condition'] == 1 ){
-            if ( $this->base_url == rtrim( $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], '/' ) ) {
+        //=====================================
+        if ( isset($_SESSION[$this->prefix]['condition']) && $_SESSION[$this->prefix]['condition'] == 1 )
+        {
+            echo 'gggggggggg';
+            if ( rtrim($this->base_url, '/') == rtrim( $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], '/' ) ) {
                 $this->auth_url = str_replace('..', App::$app->getLanguage()['code'], $model->getConfig(__DIR__, 'auth_url'));
                 header('Location: ' . $this->auth_url );
                 die;
             }
         }
+        //============================================
         if ( isset($this->params['remember']['value']) ) {
             $_SESSION[$this->prefix]['remember'] = 'checked';
             $_SESSION[$this->prefix]['login'] = htmlspecialchars( $this->params['login']['value'] ) ?? '';
@@ -69,14 +73,6 @@ class Controller extends ModulController
             }
         
         }
-
-        //$session_key = $prefix . 'condition';
-        //if ( array_key_exists($session_key, $_SESSION) ) {
-        //    $this->condition = $_SESSION[$session_key];
-        //} else {
-        //    $this->condition = 0;
-        //}
-
     }
 
     public function render()

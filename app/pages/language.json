@@ -17,6 +17,9 @@
         "fr": {
             "code": "fr",
             "name": "Franc"
+        },
+        "de": {
+            "code": "en"
         }
     }
 }
