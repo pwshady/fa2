@@ -1,4 +1,4 @@
-a:2:{s:4:"data";s:815:"<!doctype html>
+a:2:{s:4:"data";s:889:"<!doctype html>
 <html lang="ru">
 <head>
 <title>404 фреймворка Альминеевой Елены</title>
@@ -16,6 +16,7 @@ a:2:{s:4:"data";s:815:"<!doctype html>
     <h2></h2>
 </body>
 <footer>
+<script src="/fa2/core/js/bootstrap/js/bootstrap.bundle.min.js"></script>
 </footer>
 </html>
-";s:8:"end_time";i:1672726092;}
+";s:8:"end_time";i:1672914144;}

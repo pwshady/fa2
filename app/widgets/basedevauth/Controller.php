@@ -29,7 +29,6 @@ class Controller extends ModulController
         //=====================================
         if ( isset($_SESSION[$this->prefix]['condition']) && $_SESSION[$this->prefix]['condition'] == 1 )
         {
-            echo 'gggggggggg';
             if ( rtrim($this->base_url, '/') == rtrim( $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], '/' ) ) {
                 $this->auth_url = str_replace('..', App::$app->getLanguage()['code'], $model->getConfig(__DIR__, 'auth_url'));
                 header('Location: ' . $this->auth_url );
