@@ -229,7 +229,7 @@ class PageController extends Controller
         $widgets = (App::$app->getWidgets());
         foreach ( $widgets as $widget ) {
             if ( array_key_exists('name', $widget) ) {
-                $params = self::getParams('w_' . $widget['name'] . '_');
+                $params = self::getParams('w-' . $widget['name'] . '-');
                 if ( array_key_exists('cache', $widget) ) {
                     if ( empty($params) ) {
                         $file_name = 'w_' . App::$app->getLanguage()['code'] . '_' . $widget['name'];
@@ -303,13 +303,13 @@ class PageController extends Controller
         $params = [];
         foreach ( $_GET as $key => $value ) {
             if ( str_starts_with($key, $name ) ) {
-                $key_arr = explode('_', $key, 3);
+                $key_arr = explode('-', $key, 3);
                 $params[$key_arr[2]] = ['value' => $value, 'method' => 'GET'];
             }
         }
         foreach ( $_POST as $key => $value ) {
             if ( str_starts_with($key, $name ) ) {
-                $key_arr = explode('_', $key, 3);
+                $key_arr = explode('-', $key, 3);
                 $params[$key_arr[2]] = ['value' => $value, 'method' => 'POST'];
             }
         }

@@ -17,7 +17,7 @@ class Controller extends ModulController
     public function run()
     {
         $this->widget_name = self::getWidgetName(__DIR__);
-        $this->prefix = 'w_' . $this->widget_name . '_';
+        $this->prefix = 'w-' . $this->widget_name . '-';
         $model = new Model();
         $this->base_url = str_replace('..', App::$app->getLanguage()['code'], $model->getConfig(__DIR__, 'base_url'));
         if ( isset($this->params['exit']) ) {            
