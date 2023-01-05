@@ -13,6 +13,8 @@ class Controller extends ModulController
 
     public function run()
     {
+
+
         if ( file_exists( PAGE . '/language.json' ) ) {
             $model = new Model;
             $this->languages = $model->getLanguages();
@@ -25,7 +27,7 @@ class Controller extends ModulController
 
     public function render()
     {
-
+        $tec_language = App::$app->getLanguage()['code'];
         ob_start();
         require_once __DIR__ . '/indexView.php';
         return ob_get_clean();

@@ -2,7 +2,9 @@
 
 namespace app\widgets\basedevauth;
 
-class Model
+use fa2\basic\models\ModulModel;
+
+class Model  extends ModulModel
 {
 
     public function getUsers()

@@ -18,8 +18,9 @@ class Controller extends ModulController
     {
         $this->widget_name = self::getWidgetName(__DIR__);
         $this->prefix = 'w-' . $this->widget_name . '-';
-        $model = new Model();
-        $this->base_url = str_replace('..', App::$app->getLanguage()['code'], $model->getConfig(__DIR__, 'base_url'));
+        $this->model = new Model(__DIR__);
+        $this->model->run();
+        $this->base_url = str_replace('..', App::$app->getLanguage()['code'], $this->model->getConfig(__DIR__, 'base_url'));
         if ( isset($this->params['exit']) ) {            
             $_SESSION['user_roles'] = [];
             unset( $_SESSION[$this->prefix]['condition'] );
@@ -30,7 +31,7 @@ class Controller extends ModulController
         if ( isset($_SESSION[$this->prefix]['condition']) && $_SESSION[$this->prefix]['condition'] == 1 )
         {
             if ( rtrim($this->base_url, '/') == rtrim( $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], '/' ) ) {
-                $this->auth_url = str_replace('..', App::$app->getLanguage()['code'], $model->getConfig(__DIR__, 'auth_url'));
+                $this->auth_url = str_replace('..', App::$app->getLanguage()['code'], $this->model->getConfig(__DIR__, 'auth_url'));
                 header('Location: ' . $this->auth_url );
                 die;
             }
@@ -52,13 +53,13 @@ class Controller extends ModulController
         }
         if ( isset($this->params['login']['value']) ) {
             $users = [];
-            $users = $model->getUsers();
+            $users = $this->model->getUsers();
             if ( isset($users[$this->params['login']['value']]) ) {
                 if ( isset($users[$this->params['login']['value']]['password']) && $users[$this->params['login']['value']]['password'] == $this->params['password']['value']) {
                     if ( isset($users[$this->params['login']['value']]['user_roles']) ) {
                         $_SESSION['user_roles'] = $users[$this->params['login']['value']]['user_roles'];
                         $_SESSION[$this->prefix]['condition'] = 1;
-                        $this->auth_url = str_replace('..', App::$app->getLanguage()['code'], $model->getConfig(__DIR__, 'auth_url'));
+                        $this->auth_url = str_replace('..', App::$app->getLanguage()['code'], $this->model->getConfig(__DIR__, 'auth_url'));
                         header('Location: ' . $this->auth_url );
                         die;
                     } else {
@@ -76,12 +77,8 @@ class Controller extends ModulController
 
     public function render()
     {
-        $widget_name = self::getWidgetName(__DIR__);
-        $model_path = 'fa2\basic\models\ModulModel';
-        $model = new $model_path(__DIR__);
-        $model->run();
-        $labels = $model->getLabels();
-        if ( array_key_exists('view', App::$app->getWidget($widget_name)) ) {
+        $labels = $this->model->getLabels();
+        if ( array_key_exists('view', App::$app->getWidget($this->widget_name)) ) {
             $view_name = App::$app->getWidget(self::getWidgetName(__DIR__))['view'];
         } else {
             $view_name = 'mini';

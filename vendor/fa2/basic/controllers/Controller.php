@@ -7,6 +7,8 @@ use fa2\App;
 class Controller
 {
 
+    private $model;
+
     public function __construct()
     {
 
@@ -16,19 +18,6 @@ class Controller
     {
  
     }
-
-    public function runModel()
-    {
- 
-    }
-
-
-
-    public function runView()
-    {
-
-    }
-
 
 
 }
