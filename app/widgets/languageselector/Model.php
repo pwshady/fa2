@@ -4,7 +4,7 @@ namespace app\widgets\languageselector;
 
 use fa2\basic\models\ModulModel;
 
-class Model
+class Model extends ModulModel
 {
 
     public function getLanguages()

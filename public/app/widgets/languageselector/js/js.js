@@ -1,3 +1,3 @@
-function test() {
-    alert('ttk');
+function w_languageselector_setLang(name, code) {
+    window.location = window.location + '?ti=rr';
 }

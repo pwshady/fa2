@@ -13,11 +13,17 @@ class Controller extends ModulController
 
     public function run()
     {
-
-
+        self::init(__DIR__);
+        $this->model = new Model(__DIR__);
+        $this->model->run();
+        if ( isset($this->params['code']) ) {    
+            //Warning! No limit replase        
+            $uri = str_replace( '/'. App::$app->getLanguage()['code'] . '/', '/' . $this->params['code']['value'] . '/', rtrim( $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], '/' ));
+            header('Location: ' . $uri );
+            die;
+        }
         if ( file_exists( PAGE . '/language.json' ) ) {
-            $model = new Model;
-            $this->languages = $model->getLanguages();
+            $this->languages = $this->model->getLanguages();
         } else {
             echo 'languages not found';
         }

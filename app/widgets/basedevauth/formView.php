@@ -9,7 +9,7 @@
 
       <form method="post">
         <div class="input-group mb-3">
-          <input type="text" name="<?=$this->prefix?>login" value="<?=$login?>" class="form-control" placeholder="<?=$labels['login']?>">
+          <input type="text" name="<?=$this->prefix_kebab?>login" value="<?=$login?>" class="form-control" placeholder="<?=$labels['login']?>">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" name="<?=$this->prefix?>password" value="<?=$password?>" class="form-control" placeholder="<?=$labels['password']?>">
+          <input type="password" name="<?=$this->prefix_kebab?>password" value="<?=$password?>" class="form-control" placeholder="<?=$labels['password']?>">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -27,7 +27,7 @@
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" name="<?=$this->prefix?>remember" <?=$remember?> id="remember">
+              <input type="checkbox" name="<?=$this->prefix_kebab?>remember" <?=$remember?>>
               <label for="remember">
               <?=$labels['remember']?>
               </label>

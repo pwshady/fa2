@@ -10,25 +10,22 @@ class Controller extends ModulController
 {
     private $auth_url;
     private $base_url;
-    private $widget_name;
-    private $prefix;
     private $condition;
 
     public function run()
     {
-        $this->widget_name = self::getWidgetName(__DIR__);
-        $this->prefix = 'w-' . $this->widget_name . '-';
+        self::init(__DIR__);
         $this->model = new Model(__DIR__);
         $this->model->run();
         $this->base_url = str_replace('..', App::$app->getLanguage()['code'], $this->model->getConfig(__DIR__, 'base_url'));
         if ( isset($this->params['exit']) ) {            
             $_SESSION['user_roles'] = [];
-            unset( $_SESSION[$this->prefix]['condition'] );
+            unset( $_SESSION[$this->prefix_kebab]['condition'] );
             header('Location: ' . $this->base_url );
             die;
         }
         //=====================================
-        if ( isset($_SESSION[$this->prefix]['condition']) && $_SESSION[$this->prefix]['condition'] == 1 )
+        if ( isset($_SESSION[$this->prefix_kebab]['condition']) && $_SESSION[$this->prefix_kebab]['condition'] == 1 )
         {
             if ( rtrim($this->base_url, '/') == rtrim( $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], '/' ) ) {
                 $this->auth_url = str_replace('..', App::$app->getLanguage()['code'], $this->model->getConfig(__DIR__, 'auth_url'));
@@ -38,16 +35,16 @@ class Controller extends ModulController
         }
         //============================================
         if ( isset($this->params['remember']['value']) ) {
-            $_SESSION[$this->prefix]['remember'] = 'checked';
-            $_SESSION[$this->prefix]['login'] = htmlspecialchars( $this->params['login']['value'] ) ?? '';
-            $_SESSION[$this->prefix]['password'] = htmlspecialchars( $this->params['password']['value'] ) ?? '';
+            $_SESSION[$this->prefix_kebab]['remember'] = 'checked';
+            $_SESSION[$this->prefix_kebab]['login'] = htmlspecialchars( $this->params['login']['value'] ) ?? '';
+            $_SESSION[$this->prefix_kebab]['password'] = htmlspecialchars( $this->params['password']['value'] ) ?? '';
             
         } else {
             if( !empty( $this->params ) ) {
                 if ( !isset($this->params['remember']) ) {
-                    $_SESSION[$this->prefix]['remember'] = '';
-                    $_SESSION[$this->prefix]['login'] = '';
-                    $_SESSION[$this->prefix]['password'] = '';
+                    $_SESSION[$this->prefix_kebab]['remember'] = '';
+                    $_SESSION[$this->prefix_kebab]['login'] = '';
+                    $_SESSION[$this->prefix_kebab]['password'] = '';
                 }
             }
         }
@@ -58,7 +55,7 @@ class Controller extends ModulController
                 if ( isset($users[$this->params['login']['value']]['password']) && $users[$this->params['login']['value']]['password'] == $this->params['password']['value']) {
                     if ( isset($users[$this->params['login']['value']]['user_roles']) ) {
                         $_SESSION['user_roles'] = $users[$this->params['login']['value']]['user_roles'];
-                        $_SESSION[$this->prefix]['condition'] = 1;
+                        $_SESSION[$this->prefix_kebab]['condition'] = 1;
                         $this->auth_url = str_replace('..', App::$app->getLanguage()['code'], $this->model->getConfig(__DIR__, 'auth_url'));
                         header('Location: ' . $this->auth_url );
                         die;
@@ -97,9 +94,9 @@ class Controller extends ModulController
 
     public function getFormHtml($labels)
     {
-        $login = $_SESSION[$this->prefix]['login'] ?? '';
-        $password = $_SESSION[$this->prefix]['password'] ?? '';
-        $remember = $_SESSION[$this->prefix]['remember'] ?? '';
+        $login = $_SESSION[$this->prefix_kebab]['login'] ?? '';
+        $password = $_SESSION[$this->prefix_kebab]['password'] ?? '';
+        $remember = $_SESSION[$this->prefix_kebab]['remember'] ?? '';
         ob_start();
         require_once __DIR__ . '/formView.php';
         return ob_get_clean();

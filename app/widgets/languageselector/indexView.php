@@ -4,11 +4,14 @@
     </a>
     <ul class="dropdown-menu" id="lang">
         <?php foreach( $this->languages as $key => $value ):?>
+        <?php if ( $tec_language == $key ) continue ?>
         <li>
-            <button class="dropdown-item" onclick="test();" data-landcode="en">
-                <img src="/fa2/app/widgets/languageselector/src/<?= $key ?>.png" alt="<?= $this->languages[$key]['name'] ?>">
-                <?= $this->languages[$key]['name'] ?>
-            </button>
+            <form method="POST">
+                <button class="dropdown-item" type="submit" name="<?=$this->prefix_kebab?>code" value="<?= $key ?>">
+                    <img src="/fa2/app/widgets/languageselector/src/<?= $key ?>.png" alt="<?= $this->languages[$key]['name'] ?>">
+                    <?= $this->languages[$key]['name'] ?>
+                </button>
+            </form>
         </li>
         <?php endforeach; ?>
     </ul>
