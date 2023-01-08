@@ -2,5 +2,6 @@
     "basedevauth": {
         "view": "mini"
     },
-    "languageselector": {}
+    "languageselector": {},
+    "basedevpanel": {}
 }

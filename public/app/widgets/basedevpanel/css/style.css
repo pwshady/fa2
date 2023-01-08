@@ -1,0 +1,123 @@
+.w-basedevpanel-div {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+/*Navbar*/
+.w-basedevpanel-navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #343a40;
+    padding: 0.5rem 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .w-basedevpanel-navbar {
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0ms;
+        transition-property: margin-left;
+        margin-left: 250px;
+    }
+}
+
+/*Main Sidebar Container*/
+.w-basedevpanel-main-sidebar,
+.w-basedevpanel-main-sidebar::before {
+    margin-top: -56.5px;
+    background-color: #343a40;
+
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+    width: 250px;
+
+}
+
+@media (max-width: 767.98px) {
+
+    .w-basedevpanel-main-sidebar,
+    .w-basedevpanel-main-sidebar::before {
+        box-shadow: none !important;
+        margin-left: -250px;
+    }
+}
+
+.w-basedevpanel-logo {
+    background-color: red;
+    width: 250px;
+    height: 56.5px;
+}
+
+
+.w-basedevpanel-sidebar {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/*Content Wrapper. Contains page content*/
+.w-basedevpanel-content-wrapper {
+    min-height: 916;
+    background-color: #454d55;
+    color: #000;
+    position: fixed;
+    top: 250px;
+}
+
+@media (min-width: 768px) {
+    .w-basedevpanel-content-wrapper {
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0ms;
+        transition-property: margin-left;
+        margin-left: 250px;
+    }
+
+}
+
+.w-basedevpanel-content {
+    position: relative;
+}

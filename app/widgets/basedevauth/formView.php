@@ -1,4 +1,4 @@
-<div class="login-box w_basedevauth">
+<div class="login-box <?=$this->prefix_kebab?>div">
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
