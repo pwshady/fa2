@@ -1,12 +1,12 @@
 <?php
 
-namespace app\widgets\basedevauth;
+namespace app\widgets\t;
 
-use fa2\basic\controllers\ModulController;
+use fa2\basic\controllers\WidgetController;
 
 use fa2\App;
 
-class Controller extends ModulController
+class Controller extends WidgetController
 {
 
 

@@ -2,11 +2,11 @@
 
 namespace app\widgets\basedevauth;
 
-use fa2\basic\controllers\ModulController;
+use fa2\basic\controllers\WidgetController;
 
 use fa2\App;
 
-class Controller extends ModulController
+class Controller extends WidgetController
 {
     private $auth_url;
     private $base_url;
@@ -76,7 +76,7 @@ class Controller extends ModulController
     {
         $labels = $this->model->getLabels();
         if ( array_key_exists('view', App::$app->getWidget($this->widget_name)) ) {
-            $view_name = App::$app->getWidget(self::getWidgetName(__DIR__))['view'];
+            $view_name = App::$app->getWidget($this->widget_name)['view'];
         } else {
             $view_name = 'mini';
         }

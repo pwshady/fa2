@@ -2,11 +2,11 @@
 
 namespace app\widgets\basedevpanel;
 
-use fa2\basic\controllers\ModulController;
+use fa2\basic\controllers\WidgetController;
 
 use fa2\App;
 
-class Controller extends ModulController
+class Controller extends WidgetController
 {
 
 

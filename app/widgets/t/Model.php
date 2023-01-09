@@ -2,9 +2,9 @@
 
 namespace app\widgets\basedevauth;
 
-use fa2\basic\models\ModulModel;
+use fa2\basic\models\WidgetModel;
 
-class Model extends ModulModel
+class Model extends WidgetModel
 {
 
 

@@ -4,7 +4,7 @@ namespace fa2\basic\models;
 
 use fa2\App;
 
-class ModulModel extends Model
+class WidgetModel extends Model
 {
     public function __construct(public $dir){}
 
