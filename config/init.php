@@ -11,6 +11,7 @@ define("FUNC", CORE . '/func');
 #App constants
 define("APP", ROOT . '/app');
 define("PAGE", APP . '/pages');
+define("WIDGET", APP . '/widgets');
 
 #Config constants
 define("CONFIG", ROOT . '/config');

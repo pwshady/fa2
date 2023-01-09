@@ -259,7 +259,7 @@ class PageController extends Controller
     {
         $controller_path = 'app\widgets\\' . $widget['name'] . '\Controller';
         if ( class_exists($controller_path) ) {
-            $controller = new $controller_path($this->dir, $params);
+            $controller = new $controller_path($this->dir, $widget['name'], $params);
             if (method_exists($controller, 'run')) {
                 $controller->run();
             }

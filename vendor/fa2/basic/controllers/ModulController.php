@@ -11,7 +11,27 @@ class ModulController extends Controller
     protected string $prefix_kebab = '';
     protected string $prefix_snake = '';
 
-    public function __construct(public $dir, public $params = []){}
+
+    public function __construct(public $dir, public $name, public $params = []){}
+
+    public function run()
+    {
+        $dir = WIDGET . '/'. $this->name;
+        self::init($dir);
+        $model_path = 'app\widgets\\' . $this->name . '\Model';
+        debug($model_path);
+        if (class_exists($model_path)) {
+            $model = new $model_path($dir);
+        } else {
+
+        }
+        $model->run();
+    }
+
+    public function render()
+    {
+
+    }
 
     protected function init($dir)
     {
@@ -24,6 +44,11 @@ class ModulController extends Controller
     {
         $path_arr = explode('/', $dir);
         return $path_arr[count($path_arr) - 1];
+    }
+
+    public function test($dir)
+    {
+        echo '<h1>'.WIDGET . '/'. $this->name.'</h1>';
     }
 
 }

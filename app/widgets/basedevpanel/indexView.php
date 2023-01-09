@@ -14,7 +14,7 @@
     <ul class="">
       <li class="">
         <a class="" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class=""><?=$w_languageselector?></i>
+          <i class=""></i>
         </a>
       </li>
     </ul>

@@ -10,17 +10,12 @@ class Controller extends ModulController
 {
 
 
-    public function run()
-    {
-        self::init(__DIR__);
-        $this->model = new Model(__DIR__);
-        $this->model->run();
-    }
+
 
     public function render()
     {
-        $widgets = self::getWidgets();
-        $w_languageselector = $widgets['w_languageselector'];
+        //$widgets = self::getWidgets();
+        //$w_languageselector = $widgets['w_languageselector'];
         $html = [];
         ob_start();
         require_once __DIR__ . '/indexView.php';
@@ -29,10 +24,5 @@ class Controller extends ModulController
         return $html;
     }
 
-    private function getWidgets()
-    {
-        $tt = ['w_languageselector' => App::$app->getWidget('languageselector')['code']];
-        return $tt;
-    }
 
 }
