@@ -54,6 +54,13 @@ class Registry
     *Key: 'view' - View selector. Optional key
     */
     protected static array $widgets = [];
+
+    /*
+    *Key: 'name' - modul name. Required key
+    *Key: 'complete' - Value 1 after code processing
+    *Key: 'object' - Resulting from the creation of the modul
+    */
+    protected static array $modules = [];
     
 
     public function setLanguage($language)
@@ -171,6 +178,63 @@ class Registry
     public function getLabels()
     {
         return self::$labels;
+    }
+
+    public function setModul($name, $params)
+    {
+        $method = true;
+        $pos = true;
+        if (array_key_exists('method', $params)) {
+            $method = $params['method'];
+        }
+        if (array_key_exists('pos', $params)) {
+            $pos = $params['pos'];
+        }
+        if ($method) {
+            $modul = ['name' => $name, 'complete' => false, 'object' => null];
+            if ($pos) {
+                array_push(self::$modules, $modul);
+            } else {
+                array_unshift(self::$modules, $modul);
+            }
+        } else {
+            $result = [];
+            foreach (self::$modules as $modul) {
+                if ($name != $modul['name']) {
+                    array_push($result, $modul);
+                }                               
+            }
+            self::$modules = $result;
+        }
+    }
+
+    public function getModul($name)
+    {
+        foreach ( self::$modules as $key => $value) {
+            if ( array_key_exists('name', $value) ) {
+                if ( $value['name'] == $name ) 
+                {
+                    return $value;
+                }
+            }
+        }
+        return null;
+    }
+
+    public function getModules()
+    {
+        return self::$modules;
+    }
+
+    public function updateModul($modul)
+    {
+        foreach ( self::$modules as $key => $value) {
+            if ( array_key_exists('name', $value) ) {
+                if ( $modul['name'] == $value['name'] ) {
+                    self::$modules[$key] = $modul;
+                }
+            }
+        }
     }
 
     public function setWidget($name, $params)

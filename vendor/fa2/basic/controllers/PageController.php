@@ -116,15 +116,11 @@ class PageController extends Controller
     public function runModel()
     {
         $model_path = str_replace('/', '\\', $this->dir) . 'MyPageModel';
-        if (class_exists($model_path)) {
-            $model = new $model_path($this->dir);
-            $model->run();
-        } else {
+        if (!class_exists($model_path)) {
             $model_path = 'fa2\basic\models\PageModel';
-            $model = new $model_path($this->dir);
-            $model->run();
         }
-
+        $model = new $model_path($this->dir);
+        $model->run();
     }
 
     public function render($view)
@@ -224,6 +220,36 @@ class PageController extends Controller
         return '<script src="' . $href . '"></script>' . PHP_EOL;
     }
 
+    public function createdModules()
+    {
+        $modules = App::$app->getModules();
+        foreach ( $modules as $modul ) {
+            if ( array_key_exists('name', $modul) ) {
+                $params = self::getParams('m-' . $modul['name'] . '-');
+                self::createdModul( $modul, $params );
+            } else {
+                echo 'setting error' . PHP_EOL;
+            }
+        }
+    }
+
+    public function createdModul($modul, $params)
+    {
+        $controller_path = 'app\modules\\' . $modul['name'] . '\Controller';
+        if ( !class_exists($controller_path) ) {
+            return null;
+        }
+        if ( !method_exists($controller_path, 'getInstance') ) {
+            return null;
+        }
+        $modul['object'] = $controller_path::getInstance();
+        $modul['complete'] = 1;
+        if ( method_exists( $controller_path, 'run') ) {
+            $modul['complete'] = $modul['object']->run();
+        }
+        App::$app->updateModul($modul);
+    }
+
     public function createdWidgets()
     {
         $widgets = (App::$app->getWidgets());
@@ -291,6 +317,7 @@ class PageController extends Controller
             $cache->set($file_name, $html, App::$app->getSetting('cache'));
             return $html;
         }
+        self::createdModules();
         self::createdWidgets();
         $view_path = 'fa2\basic\views\PageView';
         $view = new $view_path($this->dir, $view_name);

@@ -14,6 +14,7 @@ class PageModel extends Model
         self::getErrors();
         self::getSettings();
         self::getLabels();
+        self::getModules();
         self::getWidgets();
     }
 
@@ -64,6 +65,18 @@ class PageModel extends Model
                     }
                 }
             }
+        }
+    }
+
+    public function getModules()
+    {
+        if (file_exists(ROOT . $this->dir . 'modules.json')) {
+            $modules = json_decode(file_get_contents(ROOT . $this->dir . 'modules.json'), true);
+            if (is_array($modules)) {
+                foreach ($modules as $key => $value) {
+                    App::$app->setModul($key, $value);
+                }
+            }            
         }
     }
 

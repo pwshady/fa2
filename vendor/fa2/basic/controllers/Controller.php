@@ -7,7 +7,7 @@ use fa2\App;
 class Controller
 {
 
-    private $model;
+    protected $model;
 
     public function __construct()
     {

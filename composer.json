@@ -17,6 +17,7 @@
         }
     },
     "require": {
-        "twbs/bootstrap": "5.0.2"
+        "twbs/bootstrap": "5.0.2",
+        "gabordemooij/redbean": "^5.7.1"
     }
 }

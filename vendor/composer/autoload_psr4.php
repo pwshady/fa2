@@ -9,4 +9,5 @@ return array(
     'traits\\' => array($vendorDir . '/fa2/traits'),
     'fa2\\' => array($vendorDir . '/fa2'),
     'app\\' => array($baseDir . '/app'),
+    'RedBeanPHP\\' => array($vendorDir . '/gabordemooij/redbean/RedBeanPHP'),
 );

@@ -17,6 +17,13 @@ class PageView extends View
     {
         $labels = App::$app->getLabels();
         $widgets = App::$app->getWidgets();
+        $modules = App::$app->getModules();
+        foreach ( $modules as $modul ) {
+            if ( array_key_exists('name', $modul) && array_key_exists('object', $modul) ) {
+                $name = 'm_' . $modul['name'];
+                $$name = $modul['object'];
+            }
+        }
         foreach ( $widgets as $widget) {
             if ( array_key_exists('name', $widget) && array_key_exists('code', $widget) ) {
                 $name = 'w_' . $widget['name'];
